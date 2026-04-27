@@ -13,7 +13,6 @@ public class CoinGetBox : MonoBehaviour
         if(collider.tag=="Coin")
         {
             coinController.CoinCount++;
-            Destroy(collider.gameObject);
             audioSource.PlayOneShot(SE);
         }
     }
