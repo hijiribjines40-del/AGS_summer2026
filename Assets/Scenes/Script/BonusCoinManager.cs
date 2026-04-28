@@ -18,7 +18,9 @@ public class BonusCoinManager : MonoBehaviour
     {
         if (other.tag == "Coin")
         {
-            var AddCount = Random.RandomRange(BonusRange.x, BonusRange.y);
+            //«ŒÃ‚¢‚ç‚µ‚¢
+            //var AddCount = Random.RandomRange(BonusRange.x, BonusRange.y);
+            var AddCount = Random.Range(BonusRange.x, BonusRange.y);
             for (int i = 0; i < AddCount; i++)
             {
                 var pos = coinGenerator.AddCoinPosition.position;
