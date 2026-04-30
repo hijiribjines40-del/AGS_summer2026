@@ -8,23 +8,20 @@ public class BonusCoinManager : MonoBehaviour
     public CoinController coinController;
     public CoinGenerator coinGenerator;
     public Vector2 BonusRange;
-
-    void Update()
-    {
-        
-    }
+    public AudioClip BonusSE;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Coin")
         {
+            coinGenerator.audioSource.PlayOneShot(BonusSE);
             //Å´å√Ç¢ÇÁÇµÇ¢
             //var AddCount = Random.RandomRange(BonusRange.x, BonusRange.y);
             var AddCount = Random.Range(BonusRange.x, BonusRange.y);
             for (int i = 0; i < AddCount; i++)
             {
                 var pos = coinGenerator.AddCoinPosition.position;
-                pos.x += Random.Range(-coinGenerator.RandomPos_x, coinGenerator.RandomPos_x);
+                pos.x = Random.Range(-coinGenerator.RandomPos_x, coinGenerator.RandomPos_x);
                 coinGenerator.AddCoinPosition.position = pos;
 
                 Instantiate(coinController.Coin,
