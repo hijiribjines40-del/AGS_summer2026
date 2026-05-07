@@ -14,6 +14,9 @@ public class CoinController : MonoBehaviour
 
     public int CoinCount;
     public Text CoinCountText;
+
+    public Text MoneyText;
+
     public AudioSource audioSource;
     public AudioClip SE;
 
@@ -27,6 +30,8 @@ public class CoinController : MonoBehaviour
         Move();
 
         CoinCountText.text = CoinCount.ToString();
+
+        MoneyText.text = GameManager.Instance.money.ToString();
 
         if (CoinCount == 0) return;
 

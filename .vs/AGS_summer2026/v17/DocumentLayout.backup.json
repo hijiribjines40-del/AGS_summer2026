@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9F2B767-7F77-1D46-D7AB-D960D0C467DB}|Assembly-CSharp.csproj|c:\\users\\2316015\\documents\\ags_summer2026\\assets\\scenes\\script\\bonuscoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9F2B767-7F77-1D46-D7AB-D960D0C467DB}|Assembly-CSharp.csproj|c:\\users\\2316015\\documents\\ags_summer2026\\assets\\scenes\\script\\movermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F2B767-7F77-1D46-D7AB-D960D0C467DB}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\movermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F2B767-7F77-1D46-D7AB-D960D0C467DB}|Assembly-CSharp.csproj|c:\\users\\2316015\\documents\\ags_summer2026\\assets\\scenes\\script\\coincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F2B767-7F77-1D46-D7AB-D960D0C467DB}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\coincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F2B767-7F77-1D46-D7AB-D960D0C467DB}|Assembly-CSharp.csproj|C:\\Users\\2316015\\Documents\\AGS_summer2026\\assets\\scenes\\script\\coingetbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F2B767-7F77-1D46-D7AB-D960D0C467DB}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\coingetbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F2B767-7F77-1D46-D7AB-D960D0C467DB}|Assembly-CSharp.csproj|C:\\Users\\2316015\\Documents\\AGS_summer2026\\assets\\scenes\\script\\coingenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F2B767-7F77-1D46-D7AB-D960D0C467DB}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\coingenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F2B767-7F77-1D46-D7AB-D960D0C467DB}|Assembly-CSharp.csproj|C:\\Users\\2316015\\Documents\\AGS_summer2026\\assets\\scenes\\script\\bonuscoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9F2B767-7F77-1D46-D7AB-D960D0C467DB}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\bonuscoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\CoinDestroyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\CoinDestroyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\CoinGetBox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\CoinGetBox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\BonusCoinManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,31 +47,68 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BonusCoinManager.cs",
-              "DocumentMoniker": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\Script\\BonusCoinManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\BonusCoinManager.cs",
-              "ToolTip": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\Script\\BonusCoinManager.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Script\\BonusCoinManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAADwvxYAAABCAAAAAAAAAA==",
+              "Title": "MoverManager.cs",
+              "DocumentMoniker": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\Script\\MoverManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\MoverManager.cs",
+              "ToolTip": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\Script\\MoverManager.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\MoverManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T06:41:38.755Z",
+              "WhenOpened": "2026-05-07T07:04:19.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "CoinGetBox.cs",
-              "DocumentMoniker": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\CoinGetBox.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\CoinGetBox.cs",
-              "ToolTip": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\CoinGetBox.cs",
-              "RelativeToolTip": "Assets\\Scenes\\CoinGetBox.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\Script\\CoinGetBox.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\CoinGetBox.cs",
+              "ToolTip": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\Script\\CoinGetBox.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\CoinGetBox.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T06:22:02.923Z"
+              "WhenOpened": "2026-05-07T06:30:53.065Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CoinController.cs",
+              "DocumentMoniker": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\Script\\CoinController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\CoinController.cs",
+              "ToolTip": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\Script\\CoinController.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\CoinController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T06:26:22.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CoinGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\Script\\CoinGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\CoinGenerator.cs",
+              "ToolTip": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\Script\\CoinGenerator.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\CoinGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T02:09:08.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BonusCoinManager.cs",
+              "DocumentMoniker": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\Script\\BonusCoinManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\BonusCoinManager.cs",
+              "ToolTip": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\Script\\BonusCoinManager.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\BonusCoinManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T06:41:38.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CoinDestroyer.cs",
               "DocumentMoniker": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\CoinDestroyer.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\CoinDestroyer.cs",
@@ -70,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "BonusCoinManager.cs",
               "DocumentMoniker": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\BonusCoinManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\BonusCoinManager.cs",
@@ -82,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "CoinGenerator.cs",
               "DocumentMoniker": "C:\\Users\\2316015\\Documents\\AGS_summer2026\\Assets\\Scenes\\CoinGenerator.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\CoinGenerator.cs",
