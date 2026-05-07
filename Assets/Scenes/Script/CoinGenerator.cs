@@ -33,7 +33,7 @@ public class CoinGenerator : MonoBehaviour
             for (int i = 0; i < AddCoin; i++)
             {
                 var pos = AddCoinPosition.position;
-                pos.x += Random.Range(-RandomPos_x, RandomPos_x);
+                pos.x = Random.Range(-RandomPos_x, RandomPos_x);
                 AddCoinPosition.position = pos;
 
                 Instantiate(coinController.Coin,
