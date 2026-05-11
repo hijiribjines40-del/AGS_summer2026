@@ -13,7 +13,7 @@ public class CoinGetBox : MonoBehaviour
         if(collider.tag=="Coin")
         {
             coinController.CoinCount++;
-            GameManager.Instance.money += 10;
+            GameManager.Instance.money++;
             audioSource.PlayOneShot(SE);
         }
     }

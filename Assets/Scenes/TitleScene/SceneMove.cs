@@ -9,7 +9,7 @@ public class SceneMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // GameScene‚ÖˆÚ“®
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("PushScene");
         }
     }
 }
