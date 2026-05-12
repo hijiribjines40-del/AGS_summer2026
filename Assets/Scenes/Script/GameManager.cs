@@ -14,6 +14,12 @@ public class GameManager : MonoBehaviour
     // ラウンド
     public int round = 1;
 
+    //ターン
+    public int turn = 1;
+
+    //最大ターン
+    public int maxTurn = 3;
+
     private void Awake()
     {
         // すでに存在していたら消す
