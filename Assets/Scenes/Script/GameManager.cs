@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     // ‚¨‹à
     public int money;
 
+    // Šî–{ŽØ‹à
+    public int baseDebt = 1000;
+
     // ŽØ‹à
     public int debt = 1000;
 

@@ -1142,7 +1142,7 @@ GameObject:
   - component: {fileID: 206306655}
   - component: {fileID: 206306654}
   m_Layer: 5
-  m_Name: TimeName
+  m_Name: TimerName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2949,7 +2949,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   money: 0
-  debt: 10
+  baseDebt: 30
+  debt: 30
   round: 1
   turn: 1
   maxTurn: 3
@@ -5519,7 +5520,7 @@ GameObject:
   - component: {fileID: 1450870705}
   - component: {fileID: 1450870704}
   m_Layer: 0
-  m_Name: TimeObject
+  m_Name: TimerObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5537,7 +5538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1413cb1704f5f4383b5e5381913722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PushSceneManager
-  timer: 20
+  timer: 50
+  TimerText: {fileID: 1848727489}
 --- !u!4 &1450870705
 Transform:
   m_ObjectHideFlags: 0
@@ -6680,7 +6682,7 @@ GameObject:
   - component: {fileID: 1848727490}
   - component: {fileID: 1848727489}
   m_Layer: 5
-  m_Name: TimeCount
+  m_Name: TimerCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7584,7 +7586,6 @@ MonoBehaviour:
   MaxTurnCount: {fileID: 411562850}
   TurnCount: {fileID: 411562850}
   RoundNumberText: {fileID: 787827542}
-  TimeCount: {fileID: 1848727489}
   coinController: {fileID: 1986596244}
 --- !u!1001 &2119266751
 PrefabInstance:

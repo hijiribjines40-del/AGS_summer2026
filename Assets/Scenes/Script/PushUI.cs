@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,6 @@ public class PushUI : MonoBehaviour
     public Text MaxTurnCount;
     public Text TurnCount;
     public Text RoundNumberText;
-    public Text TimeCount;
 
     public CoinController coinController;
 

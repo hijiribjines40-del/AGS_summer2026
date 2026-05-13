@@ -9,6 +9,8 @@ public class DebtUI : MonoBehaviour
     public Text TurnCount;
     public Text RoundCount;
 
+    // Ø‹à‚Ì‰ÁZ
+    public int debtAdd;
     public InputField PayInputField;
 
     void Update()
@@ -20,7 +22,7 @@ public class DebtUI : MonoBehaviour
             GameManager.Instance.debt.ToString();
 
         TurnCount.text =
-            GameManager.Instance.maxTurn.ToString();
+            $"{GameManager.Instance.maxTurn - GameManager.Instance.turn}";
 
         RoundCount.text =
             GameManager.Instance.round.ToString();
@@ -70,8 +72,12 @@ public class DebtUI : MonoBehaviour
 
         GameManager.Instance.turn = 1;
 
-        // Ÿƒ‰ƒEƒ“ƒhØ‹à‘‰Á
-        GameManager.Instance.debt += 1000;
+        // ŸRound‚ÌØ‹à‘‰Á
+        GameManager.Instance.baseDebt += debtAdd;
+
+        // Œ»İØ‹à‚É’Ç‰Á
+        GameManager.Instance.debt +=
+            GameManager.Instance.baseDebt;
 
         SceneManager.LoadScene("PushScene");
     }

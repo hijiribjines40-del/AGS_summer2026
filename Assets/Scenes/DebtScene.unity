@@ -1963,6 +1963,8 @@ MonoBehaviour:
   DebtCount: {fileID: 1209557558}
   TurnCount: {fileID: 255832673}
   RoundCount: {fileID: 963578615}
+  debtCount: 0
+  debtAdd: 20
   PayInputField: {fileID: 1517984450}
 --- !u!1 &1787186695
 GameObject:
