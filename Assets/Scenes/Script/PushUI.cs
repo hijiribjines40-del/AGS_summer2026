@@ -25,7 +25,7 @@ public class PushUI : MonoBehaviour
             GameManager.Instance.debt.ToString();
 
         MaxTurnCount.text =
-            $"{GameManager.Instance.maxTurn} - {GameManager.Instance.turn}";
+            $"{GameManager.Instance.maxTurn} / {GameManager.Instance.turn}";
 
         /*TurnCount.text =
             GameManager.Instance.turn.ToString();
