@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\titlescene\\scenemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|c:\\users\\2316035\\desktop\\ags_2026_summer\\assets\\scenes\\script\\bonuscoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\bonuscoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\bonuscoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -43,8 +43,7 @@
               "RelativeToolTip": "Assets\\Scenes\\Script\\BonusCoinManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T06:11:05.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-28T06:11:05.355Z"
             }
           ]
         }
