@@ -20,7 +20,7 @@
 /[Aa]ssets/Plugins/Editor/JetBrains*
 *.DotSettings.user
 # Visual StudioやMonoDevelop関連のキャッシュやプロジェクトファイル
-vs/
+.vs/
 /.gradle/
 ExportedObj/
 consulo/
