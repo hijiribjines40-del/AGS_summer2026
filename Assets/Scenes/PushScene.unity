@@ -708,7 +708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinGenerator
   coinController: {fileID: 1986596244}
-  AddCount: 20
+  AddCount: 15
   AddCoin: 5
   RandomPos_x: 1.2
   audioSource: {fileID: 1603983373}
@@ -4484,7 +4484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BonusCoinManager
   coinController: {fileID: 1986596244}
   coinGenerator: {fileID: 130328996}
-  BonusRange: {x: 1, y: 3}
+  BonusRange: {x: 2, y: 5}
   BonusSE: {fileID: 0}
 --- !u!1001 &1115976230
 PrefabInstance:

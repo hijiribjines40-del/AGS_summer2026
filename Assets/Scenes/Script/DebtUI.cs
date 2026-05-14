@@ -21,8 +21,22 @@ public class DebtUI : MonoBehaviour
         DebtCount.text =
             GameManager.Instance.debt.ToString();
 
+        int remainTurn =
+            GameManager.Instance.maxTurn - 
+            GameManager.Instance.turn;
+
         TurnCount.text =
-            $"{GameManager.Instance.maxTurn - GameManager.Instance.turn}";
+            remainTurn.ToString();
+
+        if (remainTurn <= 1) // Žc‚è1ƒ^[ƒ“
+        {
+            TurnCount.color =
+                new Color(
+                    1,
+                    Mathf.Abs(Mathf.Sin(Time.time * 5)),
+                    Mathf.Abs(Mathf.Sin(Time.time * 5))
+                );
+        }
 
         RoundCount.text =
             GameManager.Instance.round.ToString();
