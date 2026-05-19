@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     // ラウンド
     public int round = 1;
 
+    // 最大ラウンド
+    public int maxRound = 3;
+
     //ターン
     public int turn = 1;
 

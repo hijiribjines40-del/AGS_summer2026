@@ -2952,6 +2952,7 @@ MonoBehaviour:
   baseDebt: 30
   debt: 30
   round: 1
+  maxRound: 3
   turn: 1
   maxTurn: 3
 --- !u!1001 &756241344
