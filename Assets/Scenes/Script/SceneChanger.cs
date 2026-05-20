@@ -3,6 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
+    public void GoToTitleScene()
+    {
+        SceneManager.LoadScene("TitleScene");
+    }
+
     public void GoToDebtScene()
     {
         SceneManager.LoadScene("DebtScene");
@@ -12,4 +17,10 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("PushScene");
     }
+
+    public void GoToClearScene()
+    {
+        SceneManager.LoadScene("ClearScene");
+    }
+
 }
