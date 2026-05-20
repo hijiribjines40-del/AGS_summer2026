@@ -83,16 +83,24 @@ public class DebtUI : MonoBehaviour
     void NextRound()
     {
         GameManager.Instance.round++;
+        // §ŒÀƒ‰ƒEƒ“ƒh’´‚¦
+        if (GameManager.Instance.round >
+           GameManager.Instance.maxRound)
+        {
+            SceneManager.LoadScene("ClearScene");
+        }
+        else
+        {
+            GameManager.Instance.turn = 1;
 
-        GameManager.Instance.turn = 1;
+            // ŸRound‚ÌØ‹à‘‰Á
+            GameManager.Instance.baseDebt += debtAdd;
 
-        // ŸRound‚ÌØ‹à‘‰Á
-        GameManager.Instance.baseDebt += debtAdd;
+            // Œ»İØ‹à‚É’Ç‰Á
+            GameManager.Instance.debt +=
+                GameManager.Instance.baseDebt;
 
-        // Œ»İØ‹à‚É’Ç‰Á
-        GameManager.Instance.debt +=
-            GameManager.Instance.baseDebt;
-
-        SceneManager.LoadScene("PushScene");
+            SceneManager.LoadScene("PushScene");
+        }
     }
 }
