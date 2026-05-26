@@ -72,7 +72,7 @@ public class DebtUI : MonoBehaviour
         if (GameManager.Instance.turn >
            GameManager.Instance.maxTurn)
         {
-            SceneManager.LoadScene("GameOverScene");
+            GameOver();
         }
         else
         {
@@ -87,7 +87,7 @@ public class DebtUI : MonoBehaviour
         if (GameManager.Instance.round >
            GameManager.Instance.maxRound)
         {
-            SceneManager.LoadScene("ClearScene");
+            GameClear();
         }
         else
         {
@@ -102,5 +102,19 @@ public class DebtUI : MonoBehaviour
 
             SceneManager.LoadScene("PushScene");
         }
+    }
+
+    void GameOver()
+    {
+        GameManager.Instance.ResetGame();
+
+        SceneManager.LoadScene("GameOverScene");
+    }
+
+    void GameClear()
+    {
+        GameManager.Instance.ResetGame();
+
+        SceneManager.LoadScene("ClearScene");
     }
 }

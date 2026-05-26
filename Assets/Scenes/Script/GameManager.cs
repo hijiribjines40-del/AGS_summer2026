@@ -41,4 +41,16 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public void ResetGame()
+    {
+        money = 0;
+
+        baseDebt = 30;
+
+        debt = 30;
+
+        round = 1;
+
+        turn = 1;
+    }
 }
