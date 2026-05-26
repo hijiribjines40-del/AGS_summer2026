@@ -48,13 +48,14 @@ public class CoinController : MonoBehaviour
 
     void Move()
     {
+        /*
         var _speed = Vector3.zero;
-        _speed.x = Speed;
+        _speed.x = Speed;//0.025
 
         var pos = this.transform.position;
         if (Input.GetKey(KeyCode.D))
         {
-            if (pos.x <= 2) 
+            if (pos.x <= 2)
             {
                 this.transform.position += _speed;
             }
@@ -76,5 +77,21 @@ public class CoinController : MonoBehaviour
                 this.transform.position = pos;
             }
         }
+        */
+        // ‰¡“ü—ÍŽæ“¾
+        float x = Input.GetAxis("Horizontal");
+
+        // ˆÚ“®—Ê
+        Vector3 move = new Vector3(x * Speed * Time.deltaTime, 0, 0);
+
+        // ˆÚ“®
+        transform.position += move;
+
+        // ”ÍˆÍ§ŒÀ
+        Vector3 pos = transform.position;
+
+        pos.x = Mathf.Clamp(pos.x, -2f, 2f);
+
+        transform.position = pos;
     }
 }

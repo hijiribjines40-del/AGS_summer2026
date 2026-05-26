@@ -7589,7 +7589,7 @@ MonoBehaviour:
   Coin: {fileID: 8017205106703949925, guid: 18d7edcf12d32344c9c6b06de9404839, type: 3}
   CreatePoint: {fileID: 1986596245}
   Power: 9
-  Speed: 0.025
+  Speed: 2.5
   CoinCount: 10
   CoinCountText: {fileID: 1903023342}
   MoneyText: {fileID: 436138619}
