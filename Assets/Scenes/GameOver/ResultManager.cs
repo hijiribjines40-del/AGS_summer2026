@@ -44,21 +44,33 @@ public class ResultManager : MonoBehaviour
 
     void CreateMedal()
     {
-        Debug.Log(medalPrefabs.Length);
-        // ƒ‰ƒ“ƒ_ƒ€Prefab
+        Debug.Log("Length : " + medalPrefabs.Length);
+
+        if (medalPrefabs.Length == 0)
+        {
+            Debug.Log("Prefab‚ª“ü‚Á‚Ä‚È‚¢");
+            return;
+        }
+
         int randomIndex =
             Random.Range(0, medalPrefabs.Length);
+
+        Debug.Log("Index : " + randomIndex);
 
         GameObject randomMedal =
             medalPrefabs[randomIndex];
 
-        // ƒ‰ƒ“ƒ_ƒ€ˆÊ’u
+        if (randomMedal == null)
+        {
+            Debug.Log("Prefab‚ªNone");
+            return;
+        }
+
         Vector3 pos =
             spawnPoint.position;
 
         pos.x += Random.Range(-rangeX, rangeX);
 
-        // ¶¬
         Instantiate(
             randomMedal,
             pos,
