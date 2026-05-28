@@ -22,5 +22,10 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("ClearScene");
     }
+    public void GoToReturnScen()
+    {
+        GameManager.Instance.ResetGame();
 
+        SceneManager.LoadScene("TitleScene");
+    }
 }
