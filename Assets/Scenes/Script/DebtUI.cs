@@ -47,6 +47,13 @@ public class DebtUI : MonoBehaviour
         int pay =
             int.Parse(PayInputField.text);
 
+        // 所持金以上は支払えない
+        if (pay > GameManager.Instance.money)
+        {
+            Debug.Log("所持金が足りません");
+            return;
+        }
+
         // お金減少
         GameManager.Instance.money -= pay;
 
@@ -87,7 +94,15 @@ public class DebtUI : MonoBehaviour
         if (GameManager.Instance.round >
            GameManager.Instance.maxRound)
         {
-            GameClear();
+            // 完済チェック
+            if (GameManager.Instance.debt <= 0)
+            {
+                GameClear();
+            }
+            else
+            {
+                GameOver();
+            }
         }
         else
         {
