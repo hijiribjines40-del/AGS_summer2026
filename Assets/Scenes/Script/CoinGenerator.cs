@@ -35,8 +35,12 @@ public class CoinGenerator : MonoBehaviour
                 var pos = AddCoinPosition.position;
                 pos.x += Random.Range(-RandomPos_x, RandomPos_x);
                 AddCoinPosition.position = pos;
+               
+                // ƒ‰ƒ“ƒ_ƒ€‚É‘I‘ð
+                int randomIndex =
+                    Random.Range(0, coinController.Coin.Length);
 
-                Instantiate(coinController.Coin,
+                Instantiate(coinController.Coin[randomIndex],
                     AddCoinPosition.position, Quaternion.identity);
                 /*
                 //Collider col = coinController.Coin.GetComponent<Collider>();

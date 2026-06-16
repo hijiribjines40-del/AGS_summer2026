@@ -22,7 +22,7 @@ public class ResultManager : MonoBehaviour
         // GameManagerがある時
         if (GameManager.Instance != null)
         {
-            result = GameManager.Instance.money;
+            result = GameManager.Instance.totalmoney;
         }
 
         int count = 0;
@@ -31,7 +31,7 @@ public class ResultManager : MonoBehaviour
         {
             // 数字更新
             resultText.text =
-                "獲得メダル : " + count;
+                "総獲得メダル : " + count;
 
             // メダル生成
             CreateMedal();
@@ -44,33 +44,45 @@ public class ResultManager : MonoBehaviour
 
     void CreateMedal()
     {
+        // 配列に入っているPrefabの数を表示（デバッグ用）
         Debug.Log("Length : " + medalPrefabs.Length);
 
+        // Prefabが1つも登録されていない場合は終了
         if (medalPrefabs.Length == 0)
         {
             Debug.Log("Prefabが入ってない");
             return;
         }
 
+        // 配列の中からランダムに1つ選ぶ
         int randomIndex =
             Random.Range(0, medalPrefabs.Length);
 
+        // 選ばれた番号を表示（デバッグ用）
         Debug.Log("Index : " + randomIndex);
 
+        // ランダムに選ばれたPrefabを取得
         GameObject randomMedal =
             medalPrefabs[randomIndex];
 
+        // 選ばれたPrefabが設定されていない場合は終了
         if (randomMedal == null)
         {
             Debug.Log("PrefabがNone");
             return;
         }
 
+        // SpawnPointの位置を取得
         Vector3 pos =
             spawnPoint.position;
 
+        // X座標をランダムにずらして、
+        // メダルがばらついて落ちるようにする
         pos.x += Random.Range(-rangeX, rangeX);
 
+        // メダルを生成
+        // 位置：pos
+        // 向き：ランダム
         Instantiate(
             randomMedal,
             pos,

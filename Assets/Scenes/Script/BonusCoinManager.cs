@@ -23,8 +23,13 @@ public class BonusCoinManager : MonoBehaviour
                 var pos = coinGenerator.AddCoinPosition.position;
                 pos.x = Random.Range(-coinGenerator.RandomPos_x, coinGenerator.RandomPos_x);
                 coinGenerator.AddCoinPosition.position = pos;
+                
+                // ƒ‰ƒ“ƒ_ƒ€‚É‘I‘ð
+                int randomIndex =
+                    Random.Range(0, coinController.Coin.Length);
 
-                Instantiate(coinController.Coin,
+
+                Instantiate(coinController.Coin[randomIndex],
                     coinGenerator.AddCoinPosition.position, Quaternion.identity);
                 /*
                 //Collider col = coinController.Coin.GetComponent<Collider>();

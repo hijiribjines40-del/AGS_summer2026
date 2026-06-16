@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     // Ø‹à
     public int debt = 1000;
 
+    //‘Šl“¾”
+    public int totalmoney = 0;
+
     // ƒ‰ƒEƒ“ƒh
     public int round = 1;
 
