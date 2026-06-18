@@ -14,6 +14,7 @@ public class CoinGetBox : MonoBehaviour
         {
             coinController.CoinCount++;
             GameManager.Instance.money++;
+            GameManager.Instance.totalmoney++;
             audioSource.PlayOneShot(SE);
         }
     }

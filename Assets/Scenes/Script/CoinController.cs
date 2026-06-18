@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class CoinController : MonoBehaviour
 {
-    public GameObject Coin;
+    // コインPrefabを複数登録
+    public GameObject[] Coin;
     public Transform CreatePoint;
     public float Power;
 
@@ -37,11 +38,27 @@ public class CoinController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
+            // Prefabが登録されていなければ終了
+            if (Coin.Length == 0) return;
+
+            // ランダムにPrefabを選ぶ
+            int randomIndex = Random.Range(0, Coin.Length);
+
+            // 選んだPrefabを生成
             var create_coin =
-                Instantiate(Coin, CreatePoint.position, Quaternion.identity);
+                Instantiate(
+                    Coin[randomIndex],
+                    CreatePoint.position,
+                    Quaternion.Euler(-90, 0, 0));
+
+            // 発射
             var rb = create_coin.GetComponent<Rigidbody>();
             rb.AddForce(CreatePoint.forward *  Power, ForceMode.Impulse);
+
+            // 所持コインを減らす
             CoinCount--;
+
+            // 効果音再生
             audioSource.PlayOneShot(SE);
         }
     }

@@ -380,15 +380,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 86ffa5d9397ca3e42bcf66a9cdb67cfe, type: 2}
-  m_sharedMaterial: {fileID: 640456344851325133, guid: 86ffa5d9397ca3e42bcf66a9cdb67cfe, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b57297891d8233d43a921bbae45ace94, type: 2}
+  m_sharedMaterial: {fileID: 5944613575989782726, guid: b57297891d8233d43a921bbae45ace94, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281874488
-  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+  m_fontColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
