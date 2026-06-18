@@ -96,7 +96,7 @@ public class CoinController : MonoBehaviour
         }
         */
         // ‰¡“ü—ÍŽæ“¾
-        float x = Input.GetAxis("Horizontal");
+        float x = Input.GetAxisRaw("Horizontal");
 
         // ˆÚ“®—Ê
         Vector3 move = new Vector3(x * Speed * Time.deltaTime, 0, 0);
