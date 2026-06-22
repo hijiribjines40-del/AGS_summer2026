@@ -3,44 +3,63 @@
   "WorkspaceRootPath": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\coincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\coincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|c:\\users\\2316035\\desktop\\ags_2026_summer\\assets\\scenes\\script\\movermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\movermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|c:\\users\\2316035\\desktop\\ags_2026_summer\\assets\\scenes\\script\\pushscene\\debtui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\pushscene\\debtui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Library\\PackageCache\\com.unity.ugui@bb329a87fcdc\\Runtime\\TMP\\TextMeshProUGUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@bb329a87fcdc\\Runtime\\TMP\\TextMeshProUGUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31546D5C-3FF9-3B84-018B-FEA30434041B}|Assembly-CSharp-Editor.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\mobiledependencyresolver\\editor\\mobile-dependency-resolver_version-1.2.185_manifest.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{31546D5C-3FF9-3B84-018B-FEA30434041B}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\mobiledependencyresolver\\editor\\mobile-dependency-resolver_version-1.2.185_manifest.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2316035\\AppData\\Local\\Temp\\MetadataAsSource\\d8a0c5376ade42cba601a244710a0297\\DecompilationMetadataAsSourceFileProvider\\7d08dabd0d69466885641bc9c0b9e96d\\Quaternion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\textmesh pro\\examples \u0026 extras\\scripts\\tmp_textinfodebugtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\textmesh pro\\examples \u0026 extras\\scripts\\tmp_textinfodebugtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|c:\\users\\2316035\\desktop\\ags_2026_summer\\assets\\scenes\\script\\playermovecontrollers\\playerinputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\playermovecontrollers\\playerinputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\bonuscoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\bonuscoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\coindestroyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\coindestroyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\coingenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\coingenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\pushscene\\movermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\pushscene\\movermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\coingetbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\coingetbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\pushui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\pushui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\pushscene\\pushscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\pushscene\\pushscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\pushscene\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\pushscene\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|c:\\users\\2316035\\desktop\\ags_2026_summer\\assets\\scenes\\script\\pushscene\\coincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\pushscene\\coincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\Script\\PushUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\Script\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\coingenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\coingenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\textmesh pro\\examples \u0026 extras\\scripts\\tmp_textinfodebugtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\textmesh pro\\examples \u0026 extras\\scripts\\tmp_textinfodebugtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\gameover\\coinmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,24 +70,20 @@
       "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\gameover\\resultmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\scenechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\titlescene\\scenemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\titlescene\\scenemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\debtui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\debtui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\MoverManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\Script\\MoverManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\coindestroyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\coindestroyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\Script\\CoinController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\pushscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\pushscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\BonusCoinManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\Script\\BonusCoinManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,15 +93,212 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Quaternion.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\AppData\\Local\\Temp\\MetadataAsSource\\d8a0c5376ade42cba601a244710a0297\\DecompilationMetadataAsSourceFileProvider\\7d08dabd0d69466885641bc9c0b9e96d\\Quaternion.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\MetadataAsSource\\d8a0c5376ade42cba601a244710a0297\\DecompilationMetadataAsSourceFileProvider\\7d08dabd0d69466885641bc9c0b9e96d\\Quaternion.cs",
+              "ToolTip": "C:\\Users\\2316035\\AppData\\Local\\Temp\\MetadataAsSource\\d8a0c5376ade42cba601a244710a0297\\DecompilationMetadataAsSourceFileProvider\\7d08dabd0d69466885641bc9c0b9e96d\\Quaternion.cs [\u8AAD\u307F\u53D6\u308A\u5C02\u7528]",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\MetadataAsSource\\d8a0c5376ade42cba601a244710a0297\\DecompilationMetadataAsSourceFileProvider\\7d08dabd0d69466885641bc9c0b9e96d\\Quaternion.cs [\u8AAD\u307F\u53D6\u308A\u5C02\u7528]",
+              "ViewState": "AgIAAKUCAAAAAAAAAAAAAKUCAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T04:12:10.603Z",
+              "EditorCaption": " [\u8AAD\u307F\u53D6\u308A\u5C02\u7528]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerInputActions.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PlayerMoveControllers\\PlayerInputActions.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PlayerMoveControllers\\PlayerInputActions.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PlayerMoveControllers\\PlayerInputActions.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\PlayerMoveControllers\\PlayerInputActions.cs",
+              "ViewState": "AgIAAEMBAAAAAAAAAAAAAEMBAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T04:12:09.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DebtUI.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\DebtUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PushScene\\DebtUI.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\DebtUI.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\PushScene\\DebtUI.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T03:32:40.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PushSceneManager.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\PushSceneManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PushScene\\PushSceneManager.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\PushSceneManager.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\PushScene\\PushSceneManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T01:17:37.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SceneChanger.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\SceneChanger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\SceneChanger.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\SceneChanger.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\SceneChanger.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T06:36:35.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CoinGetBox.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinGetBox.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\CoinGetBox.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinGetBox.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\CoinGetBox.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T06:36:03.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MoverManager.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\MoverManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PushScene\\MoverManager.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\MoverManager.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\PushScene\\MoverManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T01:49:10.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TextMeshProUGUI.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Library\\PackageCache\\com.unity.ugui@bb329a87fcdc\\Runtime\\TMP\\TextMeshProUGUI.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@bb329a87fcdc\\Runtime\\TMP\\TextMeshProUGUI.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Library\\PackageCache\\com.unity.ugui@bb329a87fcdc\\Runtime\\TMP\\TextMeshProUGUI.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@bb329a87fcdc\\Runtime\\TMP\\TextMeshProUGUI.cs",
+              "ViewState": "AgIAAMQDAAAAAAAAAAAkwNYDAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T06:35:06.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PushScene\\GameManager.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\PushScene\\GameManager.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvw0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T01:23:20.911Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "CoinDestroyer.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinDestroyer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\CoinDestroyer.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinDestroyer.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\CoinDestroyer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T06:35:54.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CoinController.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\CoinController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PushScene\\CoinController.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\CoinController.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\PushScene\\CoinController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T02:06:30.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CoinGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\CoinGenerator.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinGenerator.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\CoinGenerator.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAABVwEQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T04:28:18.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PushUI.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PushUI.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushUI.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\PushUI.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T06:36:27.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\GameManager.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\GameManager.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T04:27:13.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MoverManager.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\MoverManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\MoverManager.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\MoverManager.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\MoverManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T06:36:20.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CoinController.cs",
+              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\CoinController.cs",
+              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinController.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Script\\CoinController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAIwF8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T04:41:43.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "TMP_TextInfoDebugTool.cs",
               "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\TextMesh Pro\\Examples \u0026 Extras\\Scripts\\TMP_TextInfoDebugTool.cs",
               "RelativeDocumentMoniker": "Assets\\TextMesh Pro\\Examples \u0026 Extras\\Scripts\\TMP_TextInfoDebugTool.cs",
@@ -98,81 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "mobile-dependency-resolver_version-1.2.185_manifest.txt",
-              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\MobileDependencyResolver\\Editor\\mobile-dependency-resolver_version-1.2.185_manifest.txt",
-              "RelativeDocumentMoniker": "Assets\\MobileDependencyResolver\\Editor\\mobile-dependency-resolver_version-1.2.185_manifest.txt",
-              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\MobileDependencyResolver\\Editor\\mobile-dependency-resolver_version-1.2.185_manifest.txt",
-              "RelativeToolTip": "Assets\\MobileDependencyResolver\\Editor\\mobile-dependency-resolver_version-1.2.185_manifest.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-06-16T06:26:05.081Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CoinController.cs",
-              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\CoinController.cs",
-              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinController.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Script\\CoinController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAIwF8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T04:41:43.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PushUI.cs",
-              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PushUI.cs",
-              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushUI.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Script\\PushUI.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T06:36:27.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CoinGetBox.cs",
-              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinGetBox.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\CoinGetBox.cs",
-              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinGetBox.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Script\\CoinGetBox.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T06:36:03.944Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TextMeshProUGUI.cs",
-              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Library\\PackageCache\\com.unity.ugui@bb329a87fcdc\\Runtime\\TMP\\TextMeshProUGUI.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@bb329a87fcdc\\Runtime\\TMP\\TextMeshProUGUI.cs",
-              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Library\\PackageCache\\com.unity.ugui@bb329a87fcdc\\Runtime\\TMP\\TextMeshProUGUI.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@bb329a87fcdc\\Runtime\\TMP\\TextMeshProUGUI.cs",
-              "ViewState": "AgIAAIYJAAAAAAAAAAAkwJYJAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T06:35:06.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MoverManager.cs",
-              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\MoverManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\MoverManager.cs",
-              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\MoverManager.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Script\\MoverManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T06:36:20.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
               "Title": "BonusCoinManager.cs",
               "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\BonusCoinManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\BonusCoinManager.cs",
@@ -184,31 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CoinGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinGenerator.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\CoinGenerator.cs",
-              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinGenerator.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Script\\CoinGenerator.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAADwv0QAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T04:28:18.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\GameManager.cs",
-              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Script\\GameManager.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAuwBEAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T04:27:13.835Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "CoinMove.cs",
               "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\GameOver\\CoinMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\GameOver\\CoinMove.cs",
@@ -220,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "ResultManager.cs",
               "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\GameOver\\ResultManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\GameOver\\ResultManager.cs",
@@ -232,19 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SceneChanger.cs",
-              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\SceneChanger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\SceneChanger.cs",
-              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\SceneChanger.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Script\\SceneChanger.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvwoAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T06:36:35.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "SceneMove.cs",
               "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\TitleScene\\SceneMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\TitleScene\\SceneMove.cs",
@@ -253,42 +355,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-07T02:14:47.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CoinDestroyer.cs",
-              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinDestroyer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\CoinDestroyer.cs",
-              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\CoinDestroyer.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Script\\CoinDestroyer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T06:35:54.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DebtUI.cs",
-              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\DebtUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\DebtUI.cs",
-              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\DebtUI.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Script\\DebtUI.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAnwBEAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T06:36:08.154Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PushSceneManager.cs",
-              "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushSceneManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PushSceneManager.cs",
-              "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushSceneManager.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Script\\PushSceneManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T06:36:23.545Z"
             }
           ]
         }

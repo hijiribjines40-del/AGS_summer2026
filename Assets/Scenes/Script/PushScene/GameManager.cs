@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     //Å‘åƒ^[ƒ“
     public int maxTurn = 3;
 
+    //•ÔÏ‰æ–Ê
+    public GameObject DebtCanvas;
     private void Awake()
     {
         // ‚·‚Å‚É‘¶İ‚µ‚Ä‚¢‚½‚çÁ‚·

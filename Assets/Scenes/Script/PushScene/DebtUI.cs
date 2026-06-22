@@ -13,6 +13,9 @@ public class DebtUI : MonoBehaviour
     public int debtAdd;
     public InputField PayInputField;
 
+    public GameObject DebtCanvas;
+    public PushSceneManager pushSceneManager;
+
     void Update()
     {
         MoneyCount.text =
@@ -47,13 +50,35 @@ public class DebtUI : MonoBehaviour
         int pay =
             int.Parse(PayInputField.text);
 
-        // Š‹àˆÈã‚Íx•¥‚¦‚È‚¢
+        int originalPay = pay;
+
+        // Š‹à‚ğ’´‚¦‚½‚çŠ‹à‚Æ“¯”‚É‚·‚é
         if (pay > GameManager.Instance.money)
         {
-            Debug.Log("Š‹à‚ª‘«‚è‚Ü‚¹‚ñ");
+            pay = GameManager.Instance.money;
+        }
+
+        // Ø‹à‚ğ’´‚¦‚½‚çØ‹àŠz‚É‚·‚é
+        if (pay > GameManager.Instance.debt)
+        {
+            pay = GameManager.Instance.debt;
+        }
+
+        // •â³‚ª”­¶‚µ‚½‚ç•\¦‚¾‚¯XV‚µ‚ÄI—¹
+        if (pay != originalPay)
+        {
+            PayInputField.text = pay.ToString();
             return;
         }
 
+        //// Š‹àˆÈã‚Íx•¥‚¦‚È‚¢
+        //if (pay > GameManager.Instance.money)
+        //{
+        //    Debug.Log("Š‹à‚ª‘«‚è‚Ü‚¹‚ñ");
+        //    return;
+        //}
+
+        // ‚±‚±‚©‚çÀÛ‚Ì•ÔÏ
         // ‚¨‹àŒ¸­
         GameManager.Instance.money -= pay;
 
@@ -83,7 +108,11 @@ public class DebtUI : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("PushScene");
+            pushSceneManager.timer = 30f;
+
+            Time.timeScale = 1;
+
+            DebtCanvas.SetActive(false);
         }
     }
 
@@ -115,20 +144,24 @@ public class DebtUI : MonoBehaviour
             GameManager.Instance.debt +=
                 GameManager.Instance.baseDebt;
 
-            SceneManager.LoadScene("PushScene");
+            pushSceneManager.timer = 30f;
+
+            Time.timeScale = 1;
+
+            GameManager.Instance.DebtCanvas.SetActive(false);
         }
     }
 
     void GameOver()
     {
-        GameManager.Instance.ResetGame();
+        //GameManager.Instance.ResetGame();
 
         SceneManager.LoadScene("GameOverScene");
     }
 
     void GameClear()
     {
-        GameManager.Instance.ResetGame();
+        //GameManager.Instance.ResetGame();
 
         SceneManager.LoadScene("ClearScene");
     }
