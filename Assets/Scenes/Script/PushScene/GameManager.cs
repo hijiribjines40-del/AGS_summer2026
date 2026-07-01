@@ -57,5 +57,7 @@ public class GameManager : MonoBehaviour
         round = 1;
 
         turn = 1;
+
+        totalmoney = 0;
     }
 }

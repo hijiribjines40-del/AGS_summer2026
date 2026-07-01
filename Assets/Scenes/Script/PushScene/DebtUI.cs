@@ -43,6 +43,13 @@ public class DebtUI : MonoBehaviour
 
         RoundCount.text =
             GameManager.Instance.round.ToString();
+
+        //デバッグ用、スペースキーでゲームオーバー画面に遷移
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // GameSceneへ移動
+            GameOver();
+        }
     }
 
     public void PayDebt()
@@ -154,8 +161,8 @@ public class DebtUI : MonoBehaviour
 
     void GameOver()
     {
+        Time.timeScale = 1;
         //GameManager.Instance.ResetGame();
-
         SceneManager.LoadScene("GameOverScene");
     }
 
