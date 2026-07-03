@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
+    // ‚Ç‚±‚©‚ç‚Å‚àŽg‚¦‚é‚æ‚¤‚É‚·‚é
+    public static SceneChanger Instance;
     public void GoToTitleScene()
     {
         SceneManager.LoadScene("TitleScene");
@@ -21,6 +23,10 @@ public class SceneChanger : MonoBehaviour
     public void GoToClearScene()
     {
         SceneManager.LoadScene("ClearScene");
+    }
+    public void GoToGameOverScene()
+    {
+        SceneManager.LoadScene("GameOverScene");
     }
     public void GoToReturnScen()
     {

@@ -299,11 +299,11 @@ MonoBehaviour:
   - {fileID: 8977609636357751351, guid: 2d104967328b2804a8218e9854acc485, type: 3}
   - {fileID: 5908894710712783173, guid: 16846d5a151b3f7479b9fcc6b6374e9d, type: 3}
   - {fileID: 8895239144867594642, guid: 5c7045234e379a44d98207497c920e62, type: 3}
-  - {fileID: 3735761659734303540, guid: 6a7a98efb4e9fe54587b4feecf31a768, type: 3}
   - {fileID: 4182439718125511929, guid: 06d4e026a60306644bbd0a9a2b2d348e, type: 3}
   - {fileID: 6529676259292174744, guid: 32e022fa3dc25b1428097976c855622a, type: 3}
   spawnPoint: {fileID: 2016630776}
   rangeX: 5
+  result: 0
 --- !u!4 &312488494
 Transform:
   m_ObjectHideFlags: 0
@@ -380,14 +380,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b57297891d8233d43a921bbae45ace94, type: 2}
-  m_sharedMaterial: {fileID: 5944613575989782726, guid: b57297891d8233d43a921bbae45ace94, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9e3fe7116d49c884ebafbd14a1bdc4ea, type: 2}
+  m_sharedMaterial: {fileID: 2168688901890443679, guid: 9e3fe7116d49c884ebafbd14a1bdc4ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281874488
+    rgba: 4280427042
   m_fontColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -510,6 +510,7 @@ MonoBehaviour:
   medalPrefabs: []
   spawnPoint: {fileID: 0}
   rangeX: 5
+  result: 0
 --- !u!1 &852394710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,7 +1032,7 @@ Transform:
   m_GameObject: {fileID: 2016630775}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 6, z: -5}
+  m_LocalPosition: {x: 0, y: 5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
