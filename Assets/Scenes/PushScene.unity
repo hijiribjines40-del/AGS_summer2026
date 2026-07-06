@@ -4339,7 +4339,7 @@ MonoBehaviour:
   money: 0
   baseDebt: 30
   debt: 30
-  totalmoney: 15
+  totalmoney: 0
   round: 1
   maxRound: 3
   turn: 1
