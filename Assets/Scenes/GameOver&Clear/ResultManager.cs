@@ -15,9 +15,12 @@ public class ResultManager : MonoBehaviour
     // 落下範囲
     public float rangeX = 5f;
 
+    // 総獲得メダル数
+    public int result;
     IEnumerator Start()
     {
-        int result = 500;
+   
+        result = 500;
 
         // GameManagerがある時
         if (GameManager.Instance != null)
@@ -36,11 +39,14 @@ public class ResultManager : MonoBehaviour
             // メダル生成
             CreateMedal();
 
+            Debug.Log("count = " + count);
             count++;
 
             yield return new WaitForSeconds(0.01f);
+            Debug.Log("CreateMedal");
         }
     }
+
 
     void CreateMedal()
     {
@@ -83,6 +89,7 @@ public class ResultManager : MonoBehaviour
         // メダルを生成
         // 位置：pos
         // 向き：ランダム
+        Debug.Log("Instantiate");
         Instantiate(
             randomMedal,
             pos,
