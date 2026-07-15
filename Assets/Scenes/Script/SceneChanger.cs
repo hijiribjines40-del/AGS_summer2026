@@ -30,6 +30,8 @@ public class SceneChanger : MonoBehaviour
     }
     public void GoToReturnScen()
     {
+        //オブジェクトを破棄してゲームをリセットする
+        Destroy(GameManager.Instance.gameObject);
         GameManager.Instance.ResetGame();
 
         SceneManager.LoadScene("TitleScene");

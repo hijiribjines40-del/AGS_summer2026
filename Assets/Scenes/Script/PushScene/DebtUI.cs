@@ -50,6 +50,11 @@ public class DebtUI : MonoBehaviour
             // GameScene‚ÖˆÚ“®
             GameOver();
         }
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            // GameScene‚ÖˆÚ“®
+            GameClear();
+        }
     }
 
     public void PayDebt()
@@ -162,13 +167,13 @@ public class DebtUI : MonoBehaviour
     void GameOver()
     {
         Time.timeScale = 1;
-        //GameManager.Instance.ResetGame();
+       
         SceneManager.LoadScene("GameOverScene");
     }
 
     void GameClear()
     {
-        //GameManager.Instance.ResetGame();
+        Time.timeScale = 1;
 
         SceneManager.LoadScene("ClearScene");
     }
