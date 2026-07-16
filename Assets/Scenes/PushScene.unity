@@ -7645,7 +7645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1413cb1704f5f4383b5e5381913722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PushSceneManager
-  timer: 1
+  timer: 10
   TimerText: {fileID: 1848727489}
 --- !u!4 &1450870705
 Transform:
@@ -8243,7 +8243,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 2cfd67898f3da9f46926b9efcf05afe6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
