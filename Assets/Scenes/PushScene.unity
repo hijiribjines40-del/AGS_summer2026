@@ -11490,15 +11490,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1413cb1704f5f4383b5e5381913722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PushSceneManager
-<<<<<<< HEAD
+m_EditorClassIdentifier: Assembly-CSharp::PushSceneManager
   timer: 15
-=======
-<<<<<<< HEAD
-  timer: 10
-=======
-  timer: 5
->>>>>>> 540eac59567637a42898cd1cd9292b47124d5107
->>>>>>> 222e9779fb25d7f11491d76a262a648b1402f862
+TimerText: {fileID: 1848727489}
   TimerText: {fileID: 1848727489}
 --- !u!4 &1450870705
 Transform:
