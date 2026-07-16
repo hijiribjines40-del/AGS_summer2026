@@ -12,6 +12,8 @@ public class PushSceneManager : MonoBehaviour
     {
         // Å‰‚Í”ñ•\¦
         GameManager.Instance.DebtCanvas.SetActive(false);
+
+        Time.timeScale = 1;
     }
 
     void Update()
