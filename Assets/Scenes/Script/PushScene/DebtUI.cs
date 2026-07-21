@@ -59,8 +59,15 @@ public class DebtUI : MonoBehaviour
 
     public void PayDebt()
     {
-        int pay =
-            int.Parse(PayInputField.text);
+        // 入力が数字かどうかチェック outからint payの宣言
+        if (!int.TryParse(PayInputField.text, out int pay))
+        {
+            Debug.Log("数字を入力してください");
+            PayInputField.text = "";
+            return;
+        }
+        //int pay =
+        //    int.Parse(PayInputField.text);
 
         int originalPay = pay;
 
