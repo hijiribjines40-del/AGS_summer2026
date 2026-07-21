@@ -1,0 +1,10 @@
+diff a/Assets/Scenes/PushScene.unity b/Assets/Scenes/PushScene.unity	(rejected hunks)
+@@ -226,7 +226,7 @@
+   serializedVersion: 2
+   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+   m_LocalPosition: {x: 0, y: 0, z: -0.83}
+-  m_LocalScale: {x: 10, y: 1, z: 5}
++  m_LocalScale: {x: 5, y: 1, z: 5}
+   m_ConstrainProportionsScale: 0
+   m_Children: []
+   m_Father: {fileID: 938647910}
