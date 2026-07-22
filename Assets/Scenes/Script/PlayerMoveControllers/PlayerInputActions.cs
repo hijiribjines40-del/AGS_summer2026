@@ -451,33 +451,29 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     ],
     ""controlSchemes"": []
 }");
-        // Player
-        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
-        m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
-<<<<<<< HEAD
-        // GameClear&Over
-        m_GameClearOver = asset.FindActionMap("GameClear&Over", throwIfNotFound: true);
-        m_GameClearOver_SceneChange = m_GameClearOver.FindAction("SceneChange", throwIfNotFound: true);
-=======
-        m_Player_Title = m_Player.FindAction("Title", throwIfNotFound: true);
-        // Repayment
-        m_Repayment = asset.FindActionMap("Repayment", throwIfNotFound: true);
-        m_Repayment_Increase = m_Repayment.FindAction("Increase", throwIfNotFound: true);
-        m_Repayment_Decrease = m_Repayment.FindAction("Decrease", throwIfNotFound: true);
-        m_Repayment_Confirm = m_Repayment.FindAction("Confirm", throwIfNotFound: true);
-        m_Repayment_Cancel = m_Repayment.FindAction("Cancel", throwIfNotFound: true);
->>>>>>> 4ed6f850d625613c30db9fd3ce6865a900f63119
+		// Player
+		m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
+		m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
+		m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
+		m_Player_Title = m_Player.FindAction("Title", throwIfNotFound: true);
+
+		// GameClear&Over
+		m_GameClearOver = asset.FindActionMap("GameClear&Over", throwIfNotFound: true);
+		m_GameClearOver_SceneChange = m_GameClearOver.FindAction("SceneChange", throwIfNotFound: true);
+
+		// Repayment
+		m_Repayment = asset.FindActionMap("Repayment", throwIfNotFound: true);
+		m_Repayment_Increase = m_Repayment.FindAction("Increase", throwIfNotFound: true);
+		m_Repayment_Decrease = m_Repayment.FindAction("Decrease", throwIfNotFound: true);
+		m_Repayment_Confirm = m_Repayment.FindAction("Confirm", throwIfNotFound: true);
+		m_Repayment_Cancel = m_Repayment.FindAction("Cancel", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
     {
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, PlayerInputActions.Player.Disable() has not been called.");
-<<<<<<< HEAD
         UnityEngine.Debug.Assert(!m_GameClearOver.enabled, "This will cause a leak and performance issues, PlayerInputActions.GameClearOver.Disable() has not been called.");
-=======
         UnityEngine.Debug.Assert(!m_Repayment.enabled, "This will cause a leak and performance issues, PlayerInputActions.Repayment.Disable() has not been called.");
->>>>>>> 4ed6f850d625613c30db9fd3ce6865a900f63119
     }
 
     /// <summary>
