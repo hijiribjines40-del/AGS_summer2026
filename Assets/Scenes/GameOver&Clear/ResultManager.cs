@@ -17,6 +17,7 @@ public class ResultManager : MonoBehaviour
 
     // ‘Šl“¾ƒƒ_ƒ‹”
     public int result;
+
     IEnumerator Start()
     {
    

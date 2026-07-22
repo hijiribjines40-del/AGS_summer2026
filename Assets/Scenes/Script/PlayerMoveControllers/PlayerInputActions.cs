@@ -201,6 +201,34 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""GameClear&Over"",
+            ""id"": ""12ed07d5-24d6-4e17-93a9-861258431710"",
+            ""actions"": [
+                {
+                    ""name"": ""SceneChange"",
+                    ""type"": ""Button"",
+                    ""id"": ""f741ad82-ef30-4c74-8227-408b4f545f1d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""222d6a1d-f609-4b74-8f4b-ee7697606ff4"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SceneChange"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -209,11 +237,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
+        // GameClear&Over
+        m_GameClearOver = asset.FindActionMap("GameClear&Over", throwIfNotFound: true);
+        m_GameClearOver_SceneChange = m_GameClearOver.FindAction("SceneChange", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
     {
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, PlayerInputActions.Player.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_GameClearOver.enabled, "This will cause a leak and performance issues, PlayerInputActions.GameClearOver.Disable() has not been called.");
     }
 
     /// <summary>
@@ -392,6 +424,102 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="PlayerActions" /> instance referencing this action map.
     /// </summary>
     public PlayerActions @Player => new PlayerActions(this);
+
+    // GameClear&Over
+    private readonly InputActionMap m_GameClearOver;
+    private List<IGameClearOverActions> m_GameClearOverActionsCallbackInterfaces = new List<IGameClearOverActions>();
+    private readonly InputAction m_GameClearOver_SceneChange;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "GameClear&Over".
+    /// </summary>
+    public struct GameClearOverActions
+    {
+        private @PlayerInputActions m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public GameClearOverActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "GameClearOver/SceneChange".
+        /// </summary>
+        public InputAction @SceneChange => m_Wrapper.m_GameClearOver_SceneChange;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_GameClearOver; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="GameClearOverActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(GameClearOverActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="GameClearOverActions" />
+        public void AddCallbacks(IGameClearOverActions instance)
+        {
+            if (instance == null || m_Wrapper.m_GameClearOverActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_GameClearOverActionsCallbackInterfaces.Add(instance);
+            @SceneChange.started += instance.OnSceneChange;
+            @SceneChange.performed += instance.OnSceneChange;
+            @SceneChange.canceled += instance.OnSceneChange;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="GameClearOverActions" />
+        private void UnregisterCallbacks(IGameClearOverActions instance)
+        {
+            @SceneChange.started -= instance.OnSceneChange;
+            @SceneChange.performed -= instance.OnSceneChange;
+            @SceneChange.canceled -= instance.OnSceneChange;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="GameClearOverActions.UnregisterCallbacks(IGameClearOverActions)" />.
+        /// </summary>
+        /// <seealso cref="GameClearOverActions.UnregisterCallbacks(IGameClearOverActions)" />
+        public void RemoveCallbacks(IGameClearOverActions instance)
+        {
+            if (m_Wrapper.m_GameClearOverActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="GameClearOverActions.AddCallbacks(IGameClearOverActions)" />
+        /// <seealso cref="GameClearOverActions.RemoveCallbacks(IGameClearOverActions)" />
+        /// <seealso cref="GameClearOverActions.UnregisterCallbacks(IGameClearOverActions)" />
+        public void SetCallbacks(IGameClearOverActions instance)
+        {
+            foreach (var item in m_Wrapper.m_GameClearOverActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_GameClearOverActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="GameClearOverActions" /> instance referencing this action map.
+    /// </summary>
+    public GameClearOverActions @GameClearOver => new GameClearOverActions(this);
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Player" which allows adding and removing callbacks.
     /// </summary>
@@ -413,5 +541,20 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnShoot(InputAction.CallbackContext context);
+    }
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "GameClear&Over" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="GameClearOverActions.AddCallbacks(IGameClearOverActions)" />
+    /// <seealso cref="GameClearOverActions.RemoveCallbacks(IGameClearOverActions)" />
+    public interface IGameClearOverActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "SceneChange" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSceneChange(InputAction.CallbackContext context);
     }
 }

@@ -115,6 +115,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "GameClear&Over",
+            "id": "12ed07d5-24d6-4e17-93a9-861258431710",
+            "actions": [
+                {
+                    "name": "SceneChange",
+                    "type": "Button",
+                    "id": "f741ad82-ef30-4c74-8227-408b4f545f1d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "222d6a1d-f609-4b74-8f4b-ee7697606ff4",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SceneChange",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

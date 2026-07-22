@@ -28,8 +28,11 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("GameOverScene");
     }
+
     public void GoToReturnScen()
     {
+ //PushSceneからタイトルに戻るボタンを押した時の処理リザルトでは使わない
+
         //オブジェクトを破棄してゲームをリセットする
         GameManager.Instance.DebtCanvas.SetActive(false);
         Destroy(GameManager.Instance.gameObject);
