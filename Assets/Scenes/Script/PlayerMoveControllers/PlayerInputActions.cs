@@ -664,7 +664,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     /// </summary>
     public PlayerActions @Player => new PlayerActions(this);
 
-<<<<<<< HEAD
     // GameClear&Over
     private readonly InputActionMap m_GameClearOver;
     private List<IGameClearOverActions> m_GameClearOverActionsCallbackInterfaces = new List<IGameClearOverActions>();
@@ -673,7 +672,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     /// Provides access to input actions defined in input action map "GameClear&Over".
     /// </summary>
     public struct GameClearOverActions
-=======
     // Repayment
     private readonly InputActionMap m_Repayment;
     private List<IRepaymentActions> m_RepaymentActionsCallbackInterfaces = new List<IRepaymentActions>();
@@ -685,14 +683,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     /// Provides access to input actions defined in input action map "Repayment".
     /// </summary>
     public struct RepaymentActions
->>>>>>> 4ed6f850d625613c30db9fd3ce6865a900f63119
     {
         private @PlayerInputActions m_Wrapper;
 
         /// <summary>
         /// Construct a new instance of the input action map wrapper class.
         /// </summary>
-<<<<<<< HEAD
         public GameClearOverActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         /// <summary>
         /// Provides access to the underlying input action "GameClearOver/SceneChange".
@@ -702,7 +698,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action map instance.
         /// </summary>
         public InputActionMap Get() { return m_Wrapper.m_GameClearOver; }
-=======
         public RepaymentActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         /// <summary>
         /// Provides access to the underlying input action "Repayment/Increase".
@@ -724,7 +719,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action map instance.
         /// </summary>
         public InputActionMap Get() { return m_Wrapper.m_Repayment; }
->>>>>>> 4ed6f850d625613c30db9fd3ce6865a900f63119
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
         public void Enable() { Get().Enable(); }
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
@@ -732,15 +726,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
         public bool enabled => Get().enabled;
         /// <summary>
-<<<<<<< HEAD
         /// Implicitly converts an <see ref="GameClearOverActions" /> to an <see ref="InputActionMap" /> instance.
         /// </summary>
         public static implicit operator InputActionMap(GameClearOverActions set) { return set.Get(); }
-=======
         /// Implicitly converts an <see ref="RepaymentActions" /> to an <see ref="InputActionMap" /> instance.
         /// </summary>
         public static implicit operator InputActionMap(RepaymentActions set) { return set.Get(); }
->>>>>>> 4ed6f850d625613c30db9fd3ce6865a900f63119
         /// <summary>
         /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
         /// </summary>
@@ -748,7 +739,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <remarks>
         /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
         /// </remarks>
-<<<<<<< HEAD
         /// <seealso cref="GameClearOverActions" />
         public void AddCallbacks(IGameClearOverActions instance)
         {
@@ -757,7 +747,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @SceneChange.started += instance.OnSceneChange;
             @SceneChange.performed += instance.OnSceneChange;
             @SceneChange.canceled += instance.OnSceneChange;
-=======
         /// <seealso cref="RepaymentActions" />
         public void AddCallbacks(IRepaymentActions instance)
         {
@@ -775,7 +764,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Cancel.started += instance.OnCancel;
             @Cancel.performed += instance.OnCancel;
             @Cancel.canceled += instance.OnCancel;
->>>>>>> 4ed6f850d625613c30db9fd3ce6865a900f63119
         }
 
         /// <summary>
@@ -784,7 +772,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <remarks>
         /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
         /// </remarks>
-<<<<<<< HEAD
         /// <seealso cref="GameClearOverActions" />
         private void UnregisterCallbacks(IGameClearOverActions instance)
         {
@@ -800,7 +787,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public void RemoveCallbacks(IGameClearOverActions instance)
         {
             if (m_Wrapper.m_GameClearOverActionsCallbackInterfaces.Remove(instance))
-=======
         /// <seealso cref="RepaymentActions" />
         private void UnregisterCallbacks(IRepaymentActions instance)
         {
@@ -825,7 +811,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public void RemoveCallbacks(IRepaymentActions instance)
         {
             if (m_Wrapper.m_RepaymentActionsCallbackInterfaces.Remove(instance))
->>>>>>> 4ed6f850d625613c30db9fd3ce6865a900f63119
                 UnregisterCallbacks(instance);
         }
 
@@ -835,7 +820,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <remarks>
         /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
         /// </remarks>
-<<<<<<< HEAD
         /// <seealso cref="GameClearOverActions.AddCallbacks(IGameClearOverActions)" />
         /// <seealso cref="GameClearOverActions.RemoveCallbacks(IGameClearOverActions)" />
         /// <seealso cref="GameClearOverActions.UnregisterCallbacks(IGameClearOverActions)" />
@@ -844,7 +828,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             foreach (var item in m_Wrapper.m_GameClearOverActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
             m_Wrapper.m_GameClearOverActionsCallbackInterfaces.Clear();
-=======
         /// <seealso cref="RepaymentActions.AddCallbacks(IRepaymentActions)" />
         /// <seealso cref="RepaymentActions.RemoveCallbacks(IRepaymentActions)" />
         /// <seealso cref="RepaymentActions.UnregisterCallbacks(IRepaymentActions)" />
@@ -853,20 +836,16 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             foreach (var item in m_Wrapper.m_RepaymentActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
             m_Wrapper.m_RepaymentActionsCallbackInterfaces.Clear();
->>>>>>> 4ed6f850d625613c30db9fd3ce6865a900f63119
             AddCallbacks(instance);
         }
     }
     /// <summary>
-<<<<<<< HEAD
     /// Provides a new <see cref="GameClearOverActions" /> instance referencing this action map.
     /// </summary>
     public GameClearOverActions @GameClearOver => new GameClearOverActions(this);
-=======
     /// Provides a new <see cref="RepaymentActions" /> instance referencing this action map.
     /// </summary>
     public RepaymentActions @Repayment => new RepaymentActions(this);
->>>>>>> 4ed6f850d625613c30db9fd3ce6865a900f63119
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Player" which allows adding and removing callbacks.
     /// </summary>
