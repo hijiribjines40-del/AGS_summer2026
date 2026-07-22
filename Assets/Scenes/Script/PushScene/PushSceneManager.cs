@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class PushSceneManager : MonoBehaviour
 {
     public float timer;
-    public float Bestimer;
+    public float Bestimer;//—\‚ß‹L‰¯‚³‚¹‚Ä‚¨‚­ŽžŠÔ
     public Text TimerText;
     
 
