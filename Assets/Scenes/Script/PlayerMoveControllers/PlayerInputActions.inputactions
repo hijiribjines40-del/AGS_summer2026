@@ -23,15 +23,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Title",
-                    "type": "Button",
-                    "id": "c8381eb7-2cda-4324-bb32-634f5eff31a7",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -49,7 +40,7 @@
                 {
                     "name": "up",
                     "id": "a13dabe7-4b1b-4f31-acf1-7961c26a9f40",
-                    "path": "<Keyboard>/w",
+                    "path": "W",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -60,7 +51,7 @@
                 {
                     "name": "down",
                     "id": "93ba7bcb-a5e9-4ce1-a99e-9c78a4afe72e",
-                    "path": "<Keyboard>/s",
+                    "path": "S",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -71,7 +62,7 @@
                 {
                     "name": "left",
                     "id": "97ac5cc2-994c-4360-bf8b-c7af17f0bd44",
-                    "path": "<Keyboard>/a",
+                    "path": "A",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -82,7 +73,7 @@
                 {
                     "name": "right",
                     "id": "6912531e-7bee-4022-aa96-f01701d0d1f3",
-                    "path": "<Keyboard>/d",
+                    "path": "D",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -120,215 +111,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "66c0fbd7-9916-414a-9f94-f1ed40bf0c40",
-                    "path": "<Gamepad>/start",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Title",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "e2903f25-d2ea-4e77-b52a-161f8c7fc4a6",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Title",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Repayment",
-            "id": "5d91c5fe-a703-4795-ac7f-71125902c37d",
-            "actions": [
-                {
-                    "name": "Increase",
-                    "type": "Button",
-                    "id": "412e1b9b-0bae-4c06-b4a2-f09eb647fb2c",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Decrease",
-                    "type": "Button",
-                    "id": "6af1a977-fb4f-4877-ad35-95daf1c952a3",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Confirm",
-                    "type": "Button",
-                    "id": "4a8f98db-18a5-4767-83f1-53bb2c1bd457",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Cancel",
-                    "type": "Button",
-                    "id": "6395da33-9171-4264-8972-15d1e8b13549",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "7dc9b549-bc4a-4611-a4c9-5f4b3b4d42a2",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Increase",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "6d82c513-671a-45cd-aaff-16e8579230a6",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Increase",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a65d6958-711b-439e-97d6-e62b71b293fb",
-                    "path": "<Gamepad>/dpad/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Increase",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3fe50071-f9aa-435b-a9ee-5c150fce4caf",
-                    "path": "<Gamepad>/leftStick/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Increase",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3d17c286-6087-4ea3-acc6-b944c6cc08b8",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Decrease",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8f3014ab-4b72-4767-a907-4211bbd8de22",
-                    "path": "<Keyboard>/leftArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Decrease",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "321e73dd-85d0-4793-a725-c1a61d10b895",
-                    "path": "<Gamepad>/dpad/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Decrease",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "6606b5d2-3356-4121-8ede-a9734bfd1014",
-                    "path": "<Gamepad>/leftStick/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Decrease",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "6153ebe5-6aa4-4e63-89eb-61bba1cab0e2",
-                    "path": "<Keyboard>/enter",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Confirm",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "e2626605-52df-4e2c-a114-900857a8c99c",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Confirm",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "4d5e76fe-8d26-4522-b717-a2bc7ab86baa",
-                    "path": "<XInputController>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Confirm",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "dd7283c8-44c2-451b-b0c7-3e42a4ff3cbe",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Cancel",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c057d3ec-5063-4129-8325-d612003772e4",
-                    "path": "<XInputController>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
