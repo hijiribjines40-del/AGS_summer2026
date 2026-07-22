@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -15,6 +16,33 @@ public class DebtUI : MonoBehaviour
 
     public GameObject DebtCanvas;
     public PushSceneManager pushSceneManager;
+
+    private PlayerInputActions inputActions;
+
+    public int addMoney = 1;
+
+    private void Awake()
+    {
+        inputActions = new PlayerInputActions();
+    }
+
+    private void OnEnable()
+    {
+        inputActions.Repayment.Enable();
+
+        inputActions.Repayment.Increase.performed += IncreasePay;
+        inputActions.Repayment.Decrease.performed += DecreasePay;
+        inputActions.Repayment.Confirm.performed += ConfirmPay;
+    }
+
+    private void OnDisable()
+    {
+        inputActions.Repayment.Increase.performed -= IncreasePay;
+        inputActions.Repayment.Decrease.performed -= DecreasePay;
+        inputActions.Repayment.Confirm.performed -= ConfirmPay;
+
+        inputActions.Repayment.Disable();
+    }
 
     void Update()
     {
@@ -55,6 +83,43 @@ public class DebtUI : MonoBehaviour
             // GameScene‚ÖˆÚ“®
             GameClear();
         }
+    }
+
+    // ‡D “ü—Íˆ—
+    private void IncreasePay(InputAction.CallbackContext ctx)
+    {
+        int pay = 0;
+
+        int.TryParse(PayInputField.text, out pay);
+
+        pay += addMoney;
+
+        if (pay > GameManager.Instance.money)
+            pay = GameManager.Instance.money;
+
+        if (pay > GameManager.Instance.debt)
+            pay = GameManager.Instance.debt;
+
+        PayInputField.text = pay.ToString();
+    }
+
+    private void DecreasePay(InputAction.CallbackContext ctx)
+    {
+        int pay = 0;
+
+        int.TryParse(PayInputField.text, out pay);
+
+        pay -= addMoney;
+
+        if (pay < 0)
+            pay = 0;
+
+        PayInputField.text = pay.ToString();
+    }
+
+    private void ConfirmPay(InputAction.CallbackContext ctx)
+    {
+        PayDebt();
     }
 
     public void PayDebt()
@@ -127,7 +192,7 @@ public class DebtUI : MonoBehaviour
         }
         else
         {
-            pushSceneManager.timer = 30f;
+            pushSceneManager.timer = pushSceneManager.Bestimer;
 
             Time.timeScale = 1;
 
@@ -163,7 +228,7 @@ public class DebtUI : MonoBehaviour
             GameManager.Instance.debt +=
                 GameManager.Instance.baseDebt;
 
-            pushSceneManager.timer = 30f;
+            pushSceneManager.timer = pushSceneManager.Bestimer;
 
             Time.timeScale = 1;
 

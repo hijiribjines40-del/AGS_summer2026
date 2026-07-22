@@ -5,6 +5,18 @@ public class SceneChanger : MonoBehaviour
 {
     // ‚Ç‚±‚©‚ç‚Å‚àŽg‚¦‚é‚æ‚¤‚É‚·‚é
     public static SceneChanger Instance;
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     public void GoToTitleScene()
     {
         SceneManager.LoadScene("TitleScene");
