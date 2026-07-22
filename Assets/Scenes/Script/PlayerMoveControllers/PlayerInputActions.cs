@@ -109,15 +109,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Title"",
-                    ""type"": ""Button"",
-                    ""id"": ""c8381eb7-2cda-4324-bb32-634f5eff31a7"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -135,7 +126,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""up"",
                     ""id"": ""a13dabe7-4b1b-4f31-acf1-7961c26a9f40"",
-                    ""path"": ""<Keyboard>/w"",
+                    ""path"": ""W"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -146,7 +137,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""down"",
                     ""id"": ""93ba7bcb-a5e9-4ce1-a99e-9c78a4afe72e"",
-                    ""path"": ""<Keyboard>/s"",
+                    ""path"": ""S"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -157,7 +148,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""left"",
                     ""id"": ""97ac5cc2-994c-4360-bf8b-c7af17f0bd44"",
-                    ""path"": ""<Keyboard>/a"",
+                    ""path"": ""A"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -168,7 +159,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""6912531e-7bee-4022-aa96-f01701d0d1f3"",
-                    ""path"": ""<Keyboard>/d"",
+                    ""path"": ""D"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -208,215 +199,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""66c0fbd7-9916-414a-9f94-f1ed40bf0c40"",
-                    ""path"": ""<Gamepad>/start"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Title"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e2903f25-d2ea-4e77-b52a-161f8c7fc4a6"",
-                    ""path"": ""<Keyboard>/escape"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Title"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""Repayment"",
-            ""id"": ""5d91c5fe-a703-4795-ac7f-71125902c37d"",
-            ""actions"": [
-                {
-                    ""name"": ""Increase"",
-                    ""type"": ""Button"",
-                    ""id"": ""412e1b9b-0bae-4c06-b4a2-f09eb647fb2c"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Decrease"",
-                    ""type"": ""Button"",
-                    ""id"": ""6af1a977-fb4f-4877-ad35-95daf1c952a3"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Confirm"",
-                    ""type"": ""Button"",
-                    ""id"": ""4a8f98db-18a5-4767-83f1-53bb2c1bd457"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Cancel"",
-                    ""type"": ""Button"",
-                    ""id"": ""6395da33-9171-4264-8972-15d1e8b13549"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""7dc9b549-bc4a-4611-a4c9-5f4b3b4d42a2"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Increase"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""6d82c513-671a-45cd-aaff-16e8579230a6"",
-                    ""path"": ""<Keyboard>/rightArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Increase"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a65d6958-711b-439e-97d6-e62b71b293fb"",
-                    ""path"": ""<Gamepad>/dpad/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Increase"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3fe50071-f9aa-435b-a9ee-5c150fce4caf"",
-                    ""path"": ""<Gamepad>/leftStick/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Increase"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3d17c286-6087-4ea3-acc6-b944c6cc08b8"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Decrease"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8f3014ab-4b72-4767-a907-4211bbd8de22"",
-                    ""path"": ""<Keyboard>/leftArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Decrease"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""321e73dd-85d0-4793-a725-c1a61d10b895"",
-                    ""path"": ""<Gamepad>/dpad/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Decrease"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""6606b5d2-3356-4121-8ede-a9734bfd1014"",
-                    ""path"": ""<Gamepad>/leftStick/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Decrease"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""6153ebe5-6aa4-4e63-89eb-61bba1cab0e2"",
-                    ""path"": ""<Keyboard>/enter"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Confirm"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e2626605-52df-4e2c-a114-900857a8c99c"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Confirm"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4d5e76fe-8d26-4522-b717-a2bc7ab86baa"",
-                    ""path"": ""<XInputController>/buttonEast"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Confirm"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""dd7283c8-44c2-451b-b0c7-3e42a4ff3cbe"",
-                    ""path"": ""<Keyboard>/escape"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Cancel"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c057d3ec-5063-4129-8325-d612003772e4"",
-                    ""path"": ""<XInputController>/buttonSouth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Cancel"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -424,6 +206,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             ""name"": ""GameClear&Over"",
             ""id"": ""12ed07d5-24d6-4e17-93a9-861258431710"",
             ""actions"": [
+                {
+                    ""name"": ""SceneChange"",
+                    ""type"": ""Button"",
+                    ""id"": ""f741ad82-ef30-4c74-8227-408b4f545f1d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
                 {
                     ""name"": ""SceneChange"",
                     ""type"": ""Button"",
@@ -445,35 +236,37 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""SceneChange"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""222d6a1d-f609-4b74-8f4b-ee7697606ff4"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SceneChange"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
     ],
     ""controlSchemes"": []
 }");
-		// Player
-		m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-		m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
-		m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
-		m_Player_Title = m_Player.FindAction("Title", throwIfNotFound: true);
-
-		// GameClear&Over
-		m_GameClearOver = asset.FindActionMap("GameClear&Over", throwIfNotFound: true);
-		m_GameClearOver_SceneChange = m_GameClearOver.FindAction("SceneChange", throwIfNotFound: true);
-
-		// Repayment
-		m_Repayment = asset.FindActionMap("Repayment", throwIfNotFound: true);
-		m_Repayment_Increase = m_Repayment.FindAction("Increase", throwIfNotFound: true);
-		m_Repayment_Decrease = m_Repayment.FindAction("Decrease", throwIfNotFound: true);
-		m_Repayment_Confirm = m_Repayment.FindAction("Confirm", throwIfNotFound: true);
-		m_Repayment_Cancel = m_Repayment.FindAction("Cancel", throwIfNotFound: true);
+        // Player
+        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
+        m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
+        m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
+        // GameClear&Over
+        m_GameClearOver = asset.FindActionMap("GameClear&Over", throwIfNotFound: true);
+        m_GameClearOver_SceneChange = m_GameClearOver.FindAction("SceneChange", throwIfNotFound: true);
+        m_GameClearOver_SceneChange = m_GameClearOver.FindAction("SceneChange", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
     {
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, PlayerInputActions.Player.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_GameClearOver.enabled, "This will cause a leak and performance issues, PlayerInputActions.GameClearOver.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_Repayment.enabled, "This will cause a leak and performance issues, PlayerInputActions.Repayment.Disable() has not been called.");
     }
 
     /// <summary>
@@ -551,7 +344,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Shoot;
-    private readonly InputAction m_Player_Title;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -571,10 +363,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Shoot".
         /// </summary>
         public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
-        /// <summary>
-        /// Provides access to the underlying input action "Player/Title".
-        /// </summary>
-        public InputAction @Title => m_Wrapper.m_Player_Title;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -607,9 +395,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Shoot.started += instance.OnShoot;
             @Shoot.performed += instance.OnShoot;
             @Shoot.canceled += instance.OnShoot;
-            @Title.started += instance.OnTitle;
-            @Title.performed += instance.OnTitle;
-            @Title.canceled += instance.OnTitle;
         }
 
         /// <summary>
@@ -627,9 +412,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Shoot.started -= instance.OnShoot;
             @Shoot.performed -= instance.OnShoot;
             @Shoot.canceled -= instance.OnShoot;
-            @Title.started -= instance.OnTitle;
-            @Title.performed -= instance.OnTitle;
-            @Title.canceled -= instance.OnTitle;
         }
 
         /// <summary>
@@ -668,21 +450,11 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_GameClearOver;
     private List<IGameClearOverActions> m_GameClearOverActionsCallbackInterfaces = new List<IGameClearOverActions>();
     private readonly InputAction m_GameClearOver_SceneChange;
+    private readonly InputAction m_GameClearOver_SceneChange;
     /// <summary>
     /// Provides access to input actions defined in input action map "GameClear&Over".
     /// </summary>
     public struct GameClearOverActions
-    // Repayment
-    private readonly InputActionMap m_Repayment;
-    private List<IRepaymentActions> m_RepaymentActionsCallbackInterfaces = new List<IRepaymentActions>();
-    private readonly InputAction m_Repayment_Increase;
-    private readonly InputAction m_Repayment_Decrease;
-    private readonly InputAction m_Repayment_Confirm;
-    private readonly InputAction m_Repayment_Cancel;
-    /// <summary>
-    /// Provides access to input actions defined in input action map "Repayment".
-    /// </summary>
-    public struct RepaymentActions
     {
         private @PlayerInputActions m_Wrapper;
 
@@ -695,30 +467,13 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @SceneChange => m_Wrapper.m_GameClearOver_SceneChange;
         /// <summary>
+        /// Provides access to the underlying input action "GameClearOver/SceneChange".
+        /// </summary>
+        public InputAction @SceneChange => m_Wrapper.m_GameClearOver_SceneChange;
+        /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
         public InputActionMap Get() { return m_Wrapper.m_GameClearOver; }
-        public RepaymentActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
-        /// <summary>
-        /// Provides access to the underlying input action "Repayment/Increase".
-        /// </summary>
-        public InputAction @Increase => m_Wrapper.m_Repayment_Increase;
-        /// <summary>
-        /// Provides access to the underlying input action "Repayment/Decrease".
-        /// </summary>
-        public InputAction @Decrease => m_Wrapper.m_Repayment_Decrease;
-        /// <summary>
-        /// Provides access to the underlying input action "Repayment/Confirm".
-        /// </summary>
-        public InputAction @Confirm => m_Wrapper.m_Repayment_Confirm;
-        /// <summary>
-        /// Provides access to the underlying input action "Repayment/Cancel".
-        /// </summary>
-        public InputAction @Cancel => m_Wrapper.m_Repayment_Cancel;
-        /// <summary>
-        /// Provides access to the underlying input action map instance.
-        /// </summary>
-        public InputActionMap Get() { return m_Wrapper.m_Repayment; }
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
         public void Enable() { Get().Enable(); }
         /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
@@ -729,9 +484,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Implicitly converts an <see ref="GameClearOverActions" /> to an <see ref="InputActionMap" /> instance.
         /// </summary>
         public static implicit operator InputActionMap(GameClearOverActions set) { return set.Get(); }
-        /// Implicitly converts an <see ref="RepaymentActions" /> to an <see ref="InputActionMap" /> instance.
-        /// </summary>
-        public static implicit operator InputActionMap(RepaymentActions set) { return set.Get(); }
         /// <summary>
         /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
         /// </summary>
@@ -747,23 +499,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @SceneChange.started += instance.OnSceneChange;
             @SceneChange.performed += instance.OnSceneChange;
             @SceneChange.canceled += instance.OnSceneChange;
-        /// <seealso cref="RepaymentActions" />
-        public void AddCallbacks(IRepaymentActions instance)
-        {
-            if (instance == null || m_Wrapper.m_RepaymentActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_RepaymentActionsCallbackInterfaces.Add(instance);
-            @Increase.started += instance.OnIncrease;
-            @Increase.performed += instance.OnIncrease;
-            @Increase.canceled += instance.OnIncrease;
-            @Decrease.started += instance.OnDecrease;
-            @Decrease.performed += instance.OnDecrease;
-            @Decrease.canceled += instance.OnDecrease;
-            @Confirm.started += instance.OnConfirm;
-            @Confirm.performed += instance.OnConfirm;
-            @Confirm.canceled += instance.OnConfirm;
-            @Cancel.started += instance.OnCancel;
-            @Cancel.performed += instance.OnCancel;
-            @Cancel.canceled += instance.OnCancel;
+            @SceneChange.started += instance.OnSceneChange;
+            @SceneChange.performed += instance.OnSceneChange;
+            @SceneChange.canceled += instance.OnSceneChange;
         }
 
         /// <summary>
@@ -778,6 +516,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @SceneChange.started -= instance.OnSceneChange;
             @SceneChange.performed -= instance.OnSceneChange;
             @SceneChange.canceled -= instance.OnSceneChange;
+            @SceneChange.started -= instance.OnSceneChange;
+            @SceneChange.performed -= instance.OnSceneChange;
+            @SceneChange.canceled -= instance.OnSceneChange;
         }
 
         /// <summary>
@@ -787,30 +528,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public void RemoveCallbacks(IGameClearOverActions instance)
         {
             if (m_Wrapper.m_GameClearOverActionsCallbackInterfaces.Remove(instance))
-        /// <seealso cref="RepaymentActions" />
-        private void UnregisterCallbacks(IRepaymentActions instance)
-        {
-            @Increase.started -= instance.OnIncrease;
-            @Increase.performed -= instance.OnIncrease;
-            @Increase.canceled -= instance.OnIncrease;
-            @Decrease.started -= instance.OnDecrease;
-            @Decrease.performed -= instance.OnDecrease;
-            @Decrease.canceled -= instance.OnDecrease;
-            @Confirm.started -= instance.OnConfirm;
-            @Confirm.performed -= instance.OnConfirm;
-            @Confirm.canceled -= instance.OnConfirm;
-            @Cancel.started -= instance.OnCancel;
-            @Cancel.performed -= instance.OnCancel;
-            @Cancel.canceled -= instance.OnCancel;
-        }
-
-        /// <summary>
-        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="RepaymentActions.UnregisterCallbacks(IRepaymentActions)" />.
-        /// </summary>
-        /// <seealso cref="RepaymentActions.UnregisterCallbacks(IRepaymentActions)" />
-        public void RemoveCallbacks(IRepaymentActions instance)
-        {
-            if (m_Wrapper.m_RepaymentActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
@@ -828,14 +545,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             foreach (var item in m_Wrapper.m_GameClearOverActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
             m_Wrapper.m_GameClearOverActionsCallbackInterfaces.Clear();
-        /// <seealso cref="RepaymentActions.AddCallbacks(IRepaymentActions)" />
-        /// <seealso cref="RepaymentActions.RemoveCallbacks(IRepaymentActions)" />
-        /// <seealso cref="RepaymentActions.UnregisterCallbacks(IRepaymentActions)" />
-        public void SetCallbacks(IRepaymentActions instance)
-        {
-            foreach (var item in m_Wrapper.m_RepaymentActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_RepaymentActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
@@ -843,9 +552,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="GameClearOverActions" /> instance referencing this action map.
     /// </summary>
     public GameClearOverActions @GameClearOver => new GameClearOverActions(this);
-    /// Provides a new <see cref="RepaymentActions" /> instance referencing this action map.
-    /// </summary>
-    public RepaymentActions @Repayment => new RepaymentActions(this);
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Player" which allows adding and removing callbacks.
     /// </summary>
@@ -867,49 +573,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnShoot(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "Title" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnTitle(InputAction.CallbackContext context);
-    }
-    /// <summary>
-    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Repayment" which allows adding and removing callbacks.
-    /// </summary>
-    /// <seealso cref="RepaymentActions.AddCallbacks(IRepaymentActions)" />
-    /// <seealso cref="RepaymentActions.RemoveCallbacks(IRepaymentActions)" />
-    public interface IRepaymentActions
-    {
-        /// <summary>
-        /// Method invoked when associated input action "Increase" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnIncrease(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "Decrease" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnDecrease(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "Confirm" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnConfirm(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "Cancel" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnCancel(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "GameClear&Over" which allows adding and removing callbacks.
@@ -918,6 +581,13 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     /// <seealso cref="GameClearOverActions.RemoveCallbacks(IGameClearOverActions)" />
     public interface IGameClearOverActions
     {
+        /// <summary>
+        /// Method invoked when associated input action "SceneChange" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSceneChange(InputAction.CallbackContext context);
         /// <summary>
         /// Method invoked when associated input action "SceneChange" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
