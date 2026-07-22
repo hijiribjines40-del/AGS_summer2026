@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\playermovecontrollers\\playerinputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\playermovecontrollers\\playerinputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|c:\\users\\2316035\\desktop\\ags_2026_summer\\assets\\scenes\\script\\pushscene\\debtui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\pushscene\\debtui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\pushscene\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\pushscene\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\playermovecontrollers\\playerinputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\script\\playermovecontrollers\\playerinputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78FF9DBE-BC82-5307-EB7E-9BE1B58011E8}|Assembly-CSharp.csproj|C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\assets\\scenes\\script\\pushscene\\bonuscoinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -113,11 +113,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DebtUI.cs",
               "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\DebtUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PushScene\\DebtUI.cs",
@@ -130,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PushScene\\GameManager.cs",
@@ -138,12 +138,11 @@
               "RelativeToolTip": "Assets\\Scenes\\Script\\PushScene\\GameManager.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAEwCAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T01:23:20.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-22T01:23:20.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ResultManager.cs",
               "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\GameOver\u0026Clear\\ResultManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\GameOver\u0026Clear\\ResultManager.cs",
@@ -151,25 +150,24 @@
               "RelativeToolTip": "Assets\\Scenes\\GameOver\u0026Clear\\ResultManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T05:29:27.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-07T05:29:27.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "PlayerInputActions.cs",
               "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PlayerMoveControllers\\PlayerInputActions.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PlayerMoveControllers\\PlayerInputActions.cs",
               "ToolTip": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PlayerMoveControllers\\PlayerInputActions.cs",
               "RelativeToolTip": "Assets\\Scenes\\Script\\PlayerMoveControllers\\PlayerInputActions.cs",
-              "ViewState": "AgIAAEMBAAAAAAAAAAAAAEMBAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAHUCAAAAAAAAAAArwJoCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-22T04:12:09.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SceneChanger.cs",
               "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\SceneChanger.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\SceneChanger.cs",
@@ -177,12 +175,11 @@
               "RelativeToolTip": "Assets\\Scenes\\Script\\SceneChanger.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAQwB8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T06:36:35.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T06:36:35.364Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SceneMove.cs",
               "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\TitleScene\\SceneMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\TitleScene\\SceneMove.cs",
@@ -190,12 +187,11 @@
               "RelativeToolTip": "Assets\\Scenes\\TitleScene\\SceneMove.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T02:14:47.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-07T02:14:47.012Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CoinController.cs",
               "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\CoinController.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PushScene\\CoinController.cs",
@@ -203,12 +199,11 @@
               "RelativeToolTip": "Assets\\Scenes\\Script\\PushScene\\CoinController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T02:06:30.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-22T02:06:30.089Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PushSceneManager.cs",
               "DocumentMoniker": "C:\\Users\\2316035\\Desktop\\AGS_2026_Summer\\Assets\\Scenes\\Script\\PushScene\\PushSceneManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Script\\PushScene\\PushSceneManager.cs",
@@ -216,8 +211,7 @@
               "RelativeToolTip": "Assets\\Scenes\\Script\\PushScene\\PushSceneManager.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAAwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-22T01:17:37.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-22T01:17:37.409Z"
             },
             {
               "$type": "Document",
