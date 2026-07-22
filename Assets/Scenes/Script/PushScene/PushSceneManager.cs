@@ -7,10 +7,14 @@ public class PushSceneManager : MonoBehaviour
     public float timer;
     public float Bestimer;//—\‚ß‹L‰¯‚³‚¹‚Ä‚¨‚­ŠÔ
     public Text TimerText;
-    
+
+    public GameObject DebtCanvas;
 
     void Start()
     {
+        // –ˆ‰ñAV‚µ‚¢DebtCanvas‚ğ“o˜^‚·‚é
+        GameManager.Instance.DebtCanvas = DebtCanvas;
+
         // Å‰‚Í”ñ•\¦
         GameManager.Instance.DebtCanvas.SetActive(false);
 
