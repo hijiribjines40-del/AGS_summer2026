@@ -388,7 +388,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""4d5e76fe-8d26-4522-b717-a2bc7ab86baa"",
-                    ""path"": ""<XInputController>/buttonEast"",
+                    ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -410,11 +410,125 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""c057d3ec-5063-4129-8325-d612003772e4"",
-                    ""path"": ""<XInputController>/buttonSouth"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Cancel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""TitleScene"",
+            ""id"": ""d417586d-ee69-4dca-9b03-ee689ff54efe"",
+            ""actions"": [
+                {
+                    ""name"": ""Navigate"",
+                    ""type"": ""Value"",
+                    ""id"": ""aa816189-aef2-4210-860d-30fb40e34737"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Submit"",
+                    ""type"": ""Button"",
+                    ""id"": ""7ee579bb-27d3-4101-8bba-cfcb9c0247f2"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""25c82f50-118a-4c98-9ec8-ad977fa529ba"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""8efb59c7-44e8-4279-b95d-2e69adc3bbbd"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""ef3274ea-f487-4da8-ba4a-fccdb5991231"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""63913310-ad06-427f-be41-96472e90361d"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""7234ca53-9474-45e8-9795-d912884a90ee"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""90fa6f34-6707-4d15-a381-71a5e4f9264f"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8d584526-0d0d-48d4-b654-003f513bd043"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Submit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e765be22-0da3-4812-aab8-a3cf738609bf"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Submit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -434,12 +548,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Repayment_Decrease = m_Repayment.FindAction("Decrease", throwIfNotFound: true);
         m_Repayment_Confirm = m_Repayment.FindAction("Confirm", throwIfNotFound: true);
         m_Repayment_Cancel = m_Repayment.FindAction("Cancel", throwIfNotFound: true);
+        // TitleScene
+        m_TitleScene = asset.FindActionMap("TitleScene", throwIfNotFound: true);
+        m_TitleScene_Navigate = m_TitleScene.FindAction("Navigate", throwIfNotFound: true);
+        m_TitleScene_Submit = m_TitleScene.FindAction("Submit", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
     {
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, PlayerInputActions.Player.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_Repayment.enabled, "This will cause a leak and performance issues, PlayerInputActions.Repayment.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_TitleScene.enabled, "This will cause a leak and performance issues, PlayerInputActions.TitleScene.Disable() has not been called.");
     }
 
     /// <summary>
@@ -758,6 +877,113 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="RepaymentActions" /> instance referencing this action map.
     /// </summary>
     public RepaymentActions @Repayment => new RepaymentActions(this);
+
+    // TitleScene
+    private readonly InputActionMap m_TitleScene;
+    private List<ITitleSceneActions> m_TitleSceneActionsCallbackInterfaces = new List<ITitleSceneActions>();
+    private readonly InputAction m_TitleScene_Navigate;
+    private readonly InputAction m_TitleScene_Submit;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "TitleScene".
+    /// </summary>
+    public struct TitleSceneActions
+    {
+        private @PlayerInputActions m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public TitleSceneActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "TitleScene/Navigate".
+        /// </summary>
+        public InputAction @Navigate => m_Wrapper.m_TitleScene_Navigate;
+        /// <summary>
+        /// Provides access to the underlying input action "TitleScene/Submit".
+        /// </summary>
+        public InputAction @Submit => m_Wrapper.m_TitleScene_Submit;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_TitleScene; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="TitleSceneActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(TitleSceneActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="TitleSceneActions" />
+        public void AddCallbacks(ITitleSceneActions instance)
+        {
+            if (instance == null || m_Wrapper.m_TitleSceneActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_TitleSceneActionsCallbackInterfaces.Add(instance);
+            @Navigate.started += instance.OnNavigate;
+            @Navigate.performed += instance.OnNavigate;
+            @Navigate.canceled += instance.OnNavigate;
+            @Submit.started += instance.OnSubmit;
+            @Submit.performed += instance.OnSubmit;
+            @Submit.canceled += instance.OnSubmit;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="TitleSceneActions" />
+        private void UnregisterCallbacks(ITitleSceneActions instance)
+        {
+            @Navigate.started -= instance.OnNavigate;
+            @Navigate.performed -= instance.OnNavigate;
+            @Navigate.canceled -= instance.OnNavigate;
+            @Submit.started -= instance.OnSubmit;
+            @Submit.performed -= instance.OnSubmit;
+            @Submit.canceled -= instance.OnSubmit;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="TitleSceneActions.UnregisterCallbacks(ITitleSceneActions)" />.
+        /// </summary>
+        /// <seealso cref="TitleSceneActions.UnregisterCallbacks(ITitleSceneActions)" />
+        public void RemoveCallbacks(ITitleSceneActions instance)
+        {
+            if (m_Wrapper.m_TitleSceneActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="TitleSceneActions.AddCallbacks(ITitleSceneActions)" />
+        /// <seealso cref="TitleSceneActions.RemoveCallbacks(ITitleSceneActions)" />
+        /// <seealso cref="TitleSceneActions.UnregisterCallbacks(ITitleSceneActions)" />
+        public void SetCallbacks(ITitleSceneActions instance)
+        {
+            foreach (var item in m_Wrapper.m_TitleSceneActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_TitleSceneActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="TitleSceneActions" /> instance referencing this action map.
+    /// </summary>
+    public TitleSceneActions @TitleScene => new TitleSceneActions(this);
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Player" which allows adding and removing callbacks.
     /// </summary>
@@ -822,5 +1048,27 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnCancel(InputAction.CallbackContext context);
+    }
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "TitleScene" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="TitleSceneActions.AddCallbacks(ITitleSceneActions)" />
+    /// <seealso cref="TitleSceneActions.RemoveCallbacks(ITitleSceneActions)" />
+    public interface ITitleSceneActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "Navigate" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnNavigate(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Submit" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSubmit(InputAction.CallbackContext context);
     }
 }
