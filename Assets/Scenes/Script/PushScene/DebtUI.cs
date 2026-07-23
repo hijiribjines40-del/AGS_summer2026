@@ -238,14 +238,12 @@ public class DebtUI : MonoBehaviour
 
     void GameOver()
     {
-        Time.timeScale = 1;
        
         SceneManager.LoadScene("GameOverScene");
     }
 
     void GameClear()
     {
-        Time.timeScale = 1;
 
         SceneManager.LoadScene("ClearScene");
     }

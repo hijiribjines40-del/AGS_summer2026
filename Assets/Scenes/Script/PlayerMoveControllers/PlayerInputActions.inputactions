@@ -302,7 +302,7 @@
                 {
                     "name": "",
                     "id": "4d5e76fe-8d26-4522-b717-a2bc7ab86baa",
-                    "path": "<Gamepad>/buttonEast",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -324,7 +324,7 @@
                 {
                     "name": "",
                     "id": "c057d3ec-5063-4129-8325-d612003772e4",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -426,8 +426,8 @@
                 },
                 {
                     "name": "",
-                    "id": "8d584526-0d0d-48d4-b654-003f513bd043",
-                    "path": "<Keyboard>/enter",
+                    "id": "e765be22-0da3-4812-aab8-a3cf738609bf",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -437,12 +437,51 @@
                 },
                 {
                     "name": "",
-                    "id": "e765be22-0da3-4812-aab8-a3cf738609bf",
-                    "path": "<Gamepad>/buttonEast",
+                    "id": "8d584526-0d0d-48d4-b654-003f513bd043",
+                    "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ClearScenes",
+            "id": "ac55b53f-d543-4912-b67e-3b8a45fa25e9",
+            "actions": [
+                {
+                    "name": "Navigation",
+                    "type": "Button",
+                    "id": "892609bf-b1ec-453f-95bd-77b1926f6dee",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a4a1682a-4894-4799-9220-c35811563ca3",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "161a1c55-5e82-473f-b085-1d6a71965d53",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigation",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

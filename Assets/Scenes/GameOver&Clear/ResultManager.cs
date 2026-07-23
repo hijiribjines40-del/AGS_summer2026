@@ -20,7 +20,7 @@ public class ResultManager : MonoBehaviour
 
     IEnumerator Start()
     {
-   
+        Time.timeScale = 1;
         result = 500;
 
         // GameManager‚ª‚ ‚éŽž
