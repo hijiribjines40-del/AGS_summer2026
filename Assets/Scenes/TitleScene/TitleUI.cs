@@ -3,10 +3,12 @@ using UnityEngine.EventSystems;
 
 public class TitleUI : MonoBehaviour
 {
-    [SerializeField] private GameObject firstButton;
+    [SerializeField]
+    private GameObject startButton;
 
     private void Start()
     {
-        EventSystem.current.SetSelectedGameObject(firstButton);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(startButton);
     }
 }

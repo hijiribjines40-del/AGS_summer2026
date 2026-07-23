@@ -10,7 +10,6 @@ public class SceneChanger : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -43,13 +42,16 @@ public class SceneChanger : MonoBehaviour
 
     public void GoToReturnScen()
     {
- //PushSceneからタイトルに戻るボタンを押した時の処理リザルトでは使わない
+        //PushSceneからタイトルに戻るボタンを押した時の処理リザルトでは使わない
 
         //オブジェクトを破棄してゲームをリセットする
         GameManager.Instance.DebtCanvas.SetActive(false);
-        Destroy(GameManager.Instance.gameObject);
+
+        //DontDestroyOnLoad(gameObject);
+        // ゲームの状態を初期化
         GameManager.Instance.ResetGame();
 
+        // タイトルへ戻る
         SceneManager.LoadScene("TitleScene");
     }
 }
