@@ -13,6 +13,7 @@ public class CoinController : MonoBehaviour
     public float Speed;
 
     public int CoinCount;
+    public int BaseCoinCount;
     public Text CoinCountText;
 
     public Text MoneyText;
@@ -126,6 +127,7 @@ public class CoinController : MonoBehaviour
         // Œø‰Ê‰¹
         audioSource.PlayOneShot(SE);
     }
+
     private void ReturnToTitle(InputAction.CallbackContext context)
     {
         if (!context.performed) return;

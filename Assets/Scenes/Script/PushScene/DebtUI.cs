@@ -10,6 +10,7 @@ public class DebtUI : MonoBehaviour
     public Text TurnCount;
     public Text RoundCount;
 
+    public CoinController coinController;
     // Ø‹à‚Ì‰ÁZ
     public int debtAdd;
     public InputField PayInputField;
@@ -192,6 +193,8 @@ public class DebtUI : MonoBehaviour
         }
         else
         {
+            //ƒRƒCƒ“‚Ì‘«‚è‚È‚¢•ª‚¾‚¯•â[,’Ç‰Á
+            GameCoinAdd();
             pushSceneManager.timer = pushSceneManager.Bestimer;
 
             Time.timeScale = 1;
@@ -228,6 +231,9 @@ public class DebtUI : MonoBehaviour
             GameManager.Instance.debt +=
                 GameManager.Instance.baseDebt;
 
+            //ƒRƒCƒ“‚Ì‘«‚è‚È‚¢•ª‚¾‚¯•â[,’Ç‰Á
+            GameCoinAdd();
+
             pushSceneManager.timer = pushSceneManager.Bestimer;
 
             Time.timeScale = 1;
@@ -238,13 +244,19 @@ public class DebtUI : MonoBehaviour
 
     void GameOver()
     {
-       
         SceneManager.LoadScene("GameOverScene");
     }
 
     void GameClear()
     {
-
         SceneManager.LoadScene("ClearScene");
+    }
+
+    void GameCoinAdd()
+    {
+        if (coinController.CoinCount < coinController.BaseCoinCount)
+        {
+            coinController.CoinCount = coinController.BaseCoinCount;
+        }
     }
 }
