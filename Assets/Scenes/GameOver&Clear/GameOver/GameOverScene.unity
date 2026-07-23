@@ -680,24 +680,40 @@ MonoBehaviour:
     m_ActionId: d4495dcc-7154-46e8-9164-8a48bb8c0125
     m_ActionName: 'Player/Shoot[/Mouse/leftButton,/XInputControllerWindows/rightTrigger]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 852394711}
-        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: GoToTitleScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: f741ad82-ef30-4c74-8227-408b4f545f1d
-    m_ActionName: 'GameClear&Over/SceneChange[/XInputControllerWindows/buttonEast]'
+      m_Calls: []
+    m_ActionId: c8381eb7-2cda-4324-bb32-634f5eff31a7
+    m_ActionName: 'Player/Title[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 412e1b9b-0bae-4c06-b4a2-f09eb647fb2c
+    m_ActionName: 'Repayment/Increase[/Keyboard/d,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6af1a977-fb4f-4877-ad35-95daf1c952a3
+    m_ActionName: 'Repayment/Decrease[/Keyboard/a,/Keyboard/leftArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4a8f98db-18a5-4767-83f1-53bb2c1bd457
+    m_ActionName: 'Repayment/Confirm[/Keyboard/enter,/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6395da33-9171-4264-8972-15d1e8b13549
+    m_ActionName: 'Repayment/Cancel[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: aa816189-aef2-4210-860d-30fb40e34737
+    m_ActionName: 'TitleScene/Navigate[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7ee579bb-27d3-4101-8bba-cfcb9c0247f2
+    m_ActionName: 'TitleScene/Submit[/Keyboard/enter]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 892609bf-b1ec-453f-95bd-77b1926f6dee
+    m_ActionName: 'ClearScenes/Navigation[/Keyboard/enter]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: GameClear&Over
+  m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1 &1377067350
@@ -1282,7 +1298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 2016389949}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1938533079

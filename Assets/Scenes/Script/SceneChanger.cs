@@ -18,6 +18,8 @@ public class SceneChanger : MonoBehaviour
     }
     public void GoToTitleScene()
     {
+        // ƒQ[ƒ€‚Ìó‘Ô‚ğ‰Šú‰»
+        GameManager.Instance.ResetGame();
         SceneManager.LoadScene("TitleScene");
     }
 

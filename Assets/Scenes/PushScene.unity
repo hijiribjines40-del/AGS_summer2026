@@ -8067,7 +8067,7 @@ MonoBehaviour:
   DebtCount: {fileID: 2041213266}
   TurnCount: {fileID: 656049636}
   RoundCount: {fileID: 1442725938}
-  coinController: {fileID: 0}
+  coinController: {fileID: 1986596244}
   debtAdd: 20
   PayInputField: {fileID: 224393526}
   DebtCanvas: {fileID: 1726571770}
