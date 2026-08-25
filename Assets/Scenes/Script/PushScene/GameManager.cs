@@ -5,29 +5,51 @@ public class GameManager : MonoBehaviour
     // どこからでも使えるようにする
     public static GameManager Instance;
 
+    // ゲーム開始時の借金額
+    public const int INITIAL_DEBT = 1000;
+
+    // ゲーム開始時の所持金
+    public const int INITIAL_MONEY = 0;
+
+    // ゲーム開始時のラウンド
+    public const int INITIAL_ROUND = 1;
+
+    // ゲーム開始時のターン
+    public const int INITIAL_TURN = 1;
+
+    // 1ゲームの最大ラウンド数
+    public const int MAX_ROUND = 3;
+
+    // 1ラウンドの最大ターン数
+    public const int MAX_TURN = 3;
+
+    // ゲームリセット時の借金額
+    public const int RESET_DEBT = 30;
+    
     // お金
     public int money;
 
     // 基本借金
-    public int baseDebt = 1000;
+    public int baseDebt = INITIAL_DEBT;
 
     // 借金
-    public int debt = 1000;
+    public int debt = INITIAL_DEBT;
 
-    //総獲得数
-    public int totalmoney = 0;
+    // 総獲得数
+    public int totalmoney = INITIAL_MONEY;
 
     // ラウンド
-    public int round = 1;
+    public int round = INITIAL_ROUND;
 
     // 最大ラウンド
-    public int maxRound = 3;
+    public int maxRound = MAX_ROUND;
 
-    //ターン
-    public int turn = 1;
+    // ターン
+    public int turn = INITIAL_TURN;
 
-    //最大ターン
-    public int maxTurn = 3;
+    // 最大ターン
+    public int maxTurn = MAX_TURN;
+
 
     //返済画面
     public GameObject DebtCanvas;
@@ -48,16 +70,16 @@ public class GameManager : MonoBehaviour
     }
     public void ResetGame()
     {
-        money = 0;
+        money = INITIAL_MONEY;
 
-        baseDebt = 30;
+        baseDebt = RESET_DEBT;
 
-        debt = 30;
+        debt = RESET_DEBT;
 
-        round = 1;
+        round = INITIAL_ROUND;
 
-        turn = 1;
+        turn = INITIAL_TURN;
 
-        totalmoney = 0;
+        totalmoney = INITIAL_MONEY;
     }
 }

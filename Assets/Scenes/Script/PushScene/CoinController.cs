@@ -21,10 +21,12 @@ public class CoinController : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip SE;
 
-    //void Start()
-    //{
+    // コイン発射時のX座標の移動範囲
+    public const float MOVE_MIN_X = -2f;
+    public const float MOVE_MAX_X = 2f;
 
-    //}
+    // コイン生成時の回転角度
+    public static readonly Vector3 COIN_ROTATION = new Vector3(-90f, 0f, 0f);
 
     void Update()
     {
@@ -51,7 +53,7 @@ public class CoinController : MonoBehaviour
                     Instantiate(
                         Coin[randomIndex],
                         CreatePoint.position,
-                        Quaternion.Euler(-90, 0, 0));
+                        Quaternion.Euler(COIN_ROTATION));
 
                 // 発射
                 var rb = create_coin.GetComponent<Rigidbody>();
@@ -69,36 +71,7 @@ public class CoinController : MonoBehaviour
 
     void Move()
     {
-        /*
-        var _speed = Vector3.zero;
-        _speed.x = Speed;//0.025
-
-        var pos = this.transform.position;
-        if (Input.GetKey(KeyCode.D))
-        {
-            if (pos.x <= 2)
-            {
-                this.transform.position += _speed;
-            }
-            else
-            {
-                pos.x = 2;
-                this.transform.position = pos;
-            }
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            if (pos.x >= -2)
-            {
-                this.transform.position -= _speed;
-            }
-            else
-            {
-                pos.x = -2;
-                this.transform.position = pos;
-            }
-        }
-        */
+   
         // 横入力取得
         float x = Input.GetAxisRaw("Horizontal");
 
@@ -111,7 +84,7 @@ public class CoinController : MonoBehaviour
         // 範囲制限
         Vector3 pos = transform.position;
 
-        pos.x = Mathf.Clamp(pos.x, -2f, 2f);
+        pos.x = Mathf.Clamp(pos.x, MOVE_MIN_X, MOVE_MAX_X);
 
         transform.position = pos;
     }

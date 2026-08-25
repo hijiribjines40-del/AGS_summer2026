@@ -15,8 +15,7 @@ public class BonusCoinManager : MonoBehaviour
         if (other.tag == "Coin")
         {
             coinGenerator.audioSource.PlayOneShot(BonusSE);
-            //↓古いらしい
-            //var AddCount = Random.RandomRange(BonusRange.x, BonusRange.y);
+            
             var AddCount = Random.Range(BonusRange.x, BonusRange.y);
             for (int i = 0; i < AddCount; i++)
             {
@@ -31,30 +30,7 @@ public class BonusCoinManager : MonoBehaviour
 
                 Instantiate(coinController.Coin[randomIndex],
                     coinGenerator.AddCoinPosition.position, Quaternion.identity);
-                /*
-                //Collider col = coinController.Coin.GetComponent<Collider>();
-                //float margin = col.bounds.extents.x;
-
-                //Vector3 spawnPos = basePos;
-
-                //spawnPos.x += Random.Range(-RandomPos_x, RandomPos_x);
-
-                //// 出現元オブジェクトを動かす
-                //Vector3 newPos = new Vector3(
-                //    basePos.x + spawnPos.x,
-                //    basePos.y,
-                //    basePos.z+ spawnPos.z
-                //);
-
-                //newPos.x = Mathf.Clamp(newPos.x, MinX + margin, MaxX - margin);
-                //newPos.z = Mathf.Clamp(newPos.z, MinZ + margin, MaxZ - margin);
-
-                //AddCoinPosition.position = newPos;
-
-                // その位置にコイン生成
-                Instantiate(coinController.Coin,
-                    AddCoinPosition.position, Quaternion.identity);
-                */
+               
                 coinGenerator.audioSource.PlayOneShot(coinGenerator.SE);
             }
         }

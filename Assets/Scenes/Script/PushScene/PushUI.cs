@@ -27,9 +27,6 @@ public class PushUI : MonoBehaviour
         MaxTurnCount.text =
             $"{GameManager.Instance.maxTurn} / {GameManager.Instance.turn}";
 
-        /*TurnCount.text =
-            GameManager.Instance.turn.ToString();
-        */
         RoundNumberText.text =
             GameManager.Instance.round.ToString();
     }

@@ -9,6 +9,9 @@ public class PushSceneManager : MonoBehaviour
 
     public GameObject DebtCanvas;
 
+    // 通常のゲーム速度
+    private const float NORMAL_TIME_SCALE = 1f;
+
     void Start()
     {
         // 毎回、新しいDebtCanvasを登録する
@@ -17,7 +20,7 @@ public class PushSceneManager : MonoBehaviour
         // 最初は非表示
         GameManager.Instance.DebtCanvas.SetActive(false);
 
-        Time.timeScale = 1;
+        Time.timeScale = NORMAL_TIME_SCALE;
     }
 
     void Update()

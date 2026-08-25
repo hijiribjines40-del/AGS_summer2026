@@ -18,6 +18,7 @@ public class SceneChanger : MonoBehaviour
     }
     public void GoToTitleScene()
     {
+        GameManager.Instance.ResetGame();
         SceneManager.LoadScene("TitleScene");
     }
 
@@ -28,6 +29,7 @@ public class SceneChanger : MonoBehaviour
 
     public void GoToPushScene()
     {
+        
         SceneManager.LoadScene("PushScene");
     }
 
@@ -42,12 +44,10 @@ public class SceneChanger : MonoBehaviour
 
     public void GoToReturnScen()
     {
-        //PushSceneからタイトルに戻るボタンを押した時の処理リザルトでは使わない
-
+       
         //オブジェクトを破棄してゲームをリセットする
         GameManager.Instance.DebtCanvas.SetActive(false);
 
-        //DontDestroyOnLoad(gameObject);
         // ゲームの状態を初期化
         GameManager.Instance.ResetGame();
 
