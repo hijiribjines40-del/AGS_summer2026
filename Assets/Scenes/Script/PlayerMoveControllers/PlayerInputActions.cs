@@ -388,7 +388,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""4d5e76fe-8d26-4522-b717-a2bc7ab86baa"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -410,7 +410,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""c057d3ec-5063-4129-8325-d612003772e4"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -512,8 +512,8 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""8d584526-0d0d-48d4-b654-003f513bd043"",
-                    ""path"": ""<Keyboard>/enter"",
+                    ""id"": ""e765be22-0da3-4812-aab8-a3cf738609bf"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -523,12 +523,51 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""e765be22-0da3-4812-aab8-a3cf738609bf"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""id"": ""8d584526-0d0d-48d4-b654-003f513bd043"",
+                    ""path"": ""<Keyboard>/enter"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Submit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""ClearScenes"",
+            ""id"": ""ac55b53f-d543-4912-b67e-3b8a45fa25e9"",
+            ""actions"": [
+                {
+                    ""name"": ""Navigation"",
+                    ""type"": ""Button"",
+                    ""id"": ""892609bf-b1ec-453f-95bd-77b1926f6dee"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""a4a1682a-4894-4799-9220-c35811563ca3"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""161a1c55-5e82-473f-b085-1d6a71965d53"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -552,6 +591,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_TitleScene = asset.FindActionMap("TitleScene", throwIfNotFound: true);
         m_TitleScene_Navigate = m_TitleScene.FindAction("Navigate", throwIfNotFound: true);
         m_TitleScene_Submit = m_TitleScene.FindAction("Submit", throwIfNotFound: true);
+        // ClearScenes
+        m_ClearScenes = asset.FindActionMap("ClearScenes", throwIfNotFound: true);
+        m_ClearScenes_Navigation = m_ClearScenes.FindAction("Navigation", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -559,6 +601,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, PlayerInputActions.Player.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_Repayment.enabled, "This will cause a leak and performance issues, PlayerInputActions.Repayment.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_TitleScene.enabled, "This will cause a leak and performance issues, PlayerInputActions.TitleScene.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_ClearScenes.enabled, "This will cause a leak and performance issues, PlayerInputActions.ClearScenes.Disable() has not been called.");
     }
 
     /// <summary>
@@ -984,6 +1027,102 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="TitleSceneActions" /> instance referencing this action map.
     /// </summary>
     public TitleSceneActions @TitleScene => new TitleSceneActions(this);
+
+    // ClearScenes
+    private readonly InputActionMap m_ClearScenes;
+    private List<IClearScenesActions> m_ClearScenesActionsCallbackInterfaces = new List<IClearScenesActions>();
+    private readonly InputAction m_ClearScenes_Navigation;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "ClearScenes".
+    /// </summary>
+    public struct ClearScenesActions
+    {
+        private @PlayerInputActions m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public ClearScenesActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "ClearScenes/Navigation".
+        /// </summary>
+        public InputAction @Navigation => m_Wrapper.m_ClearScenes_Navigation;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_ClearScenes; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="ClearScenesActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(ClearScenesActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="ClearScenesActions" />
+        public void AddCallbacks(IClearScenesActions instance)
+        {
+            if (instance == null || m_Wrapper.m_ClearScenesActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_ClearScenesActionsCallbackInterfaces.Add(instance);
+            @Navigation.started += instance.OnNavigation;
+            @Navigation.performed += instance.OnNavigation;
+            @Navigation.canceled += instance.OnNavigation;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="ClearScenesActions" />
+        private void UnregisterCallbacks(IClearScenesActions instance)
+        {
+            @Navigation.started -= instance.OnNavigation;
+            @Navigation.performed -= instance.OnNavigation;
+            @Navigation.canceled -= instance.OnNavigation;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="ClearScenesActions.UnregisterCallbacks(IClearScenesActions)" />.
+        /// </summary>
+        /// <seealso cref="ClearScenesActions.UnregisterCallbacks(IClearScenesActions)" />
+        public void RemoveCallbacks(IClearScenesActions instance)
+        {
+            if (m_Wrapper.m_ClearScenesActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="ClearScenesActions.AddCallbacks(IClearScenesActions)" />
+        /// <seealso cref="ClearScenesActions.RemoveCallbacks(IClearScenesActions)" />
+        /// <seealso cref="ClearScenesActions.UnregisterCallbacks(IClearScenesActions)" />
+        public void SetCallbacks(IClearScenesActions instance)
+        {
+            foreach (var item in m_Wrapper.m_ClearScenesActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_ClearScenesActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="ClearScenesActions" /> instance referencing this action map.
+    /// </summary>
+    public ClearScenesActions @ClearScenes => new ClearScenesActions(this);
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Player" which allows adding and removing callbacks.
     /// </summary>
@@ -1070,5 +1209,20 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnSubmit(InputAction.CallbackContext context);
+    }
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "ClearScenes" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="ClearScenesActions.AddCallbacks(IClearScenesActions)" />
+    /// <seealso cref="ClearScenesActions.RemoveCallbacks(IClearScenesActions)" />
+    public interface IClearScenesActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "Navigation" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnNavigation(InputAction.CallbackContext context);
     }
 }

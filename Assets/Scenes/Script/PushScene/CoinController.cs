@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class CoinController : MonoBehaviour
 {
@@ -14,6 +13,7 @@ public class CoinController : MonoBehaviour
     public float Speed;
 
     public int CoinCount;
+    public int BaseCoinCount;
     public Text CoinCountText;
 
     public Text MoneyText;
@@ -21,71 +21,117 @@ public class CoinController : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip SE;
 
-    // コイン発射時のX座標の移動範囲
-    public const float MOVE_MIN_X = -2f;
-    public const float MOVE_MAX_X = 2f;
+    // Input System
+    private PlayerInputActions inputActions;
+    private Vector2 moveInput;
 
-    // コイン生成時の回転角度
-    public static readonly Vector3 COIN_ROTATION = new Vector3(-90f, 0f, 0f);
+    private void Awake()
+    {
+        inputActions = new PlayerInputActions();
+    }
 
-    void Update()
+    private void OnEnable()
+    {
+        inputActions.Enable();
+
+        // 移動入力
+        inputActions.Player.Move.performed += OnMove;
+        inputActions.Player.Move.canceled += OnMove;
+
+        // 発射入力
+        inputActions.Player.Shoot.performed += Shoot;
+
+        // タイトルに戻る
+        inputActions.Player.Title.performed += ReturnToTitle;
+
+        Debug.Log("Input Enabled");
+    }
+
+    private void OnDisable()
+    {
+        inputActions.Player.Move.performed -= OnMove;
+        inputActions.Player.Move.canceled -= OnMove;
+
+        inputActions.Player.Shoot.performed -= Shoot;
+
+        inputActions.Player.Title.performed -= ReturnToTitle;
+
+        inputActions.Disable();
+    }
+
+    private void Update()
     {
         Move();
 
         CoinCountText.text = CoinCount.ToString();
-
         MoneyText.text = GameManager.Instance.money.ToString();
+    }
+
+    //=========================
+    // 移動入力
+    //=========================
+    private void OnMove(InputAction.CallbackContext context)
+    {
+        moveInput = context.ReadValue<Vector2>();
+        Debug.Log(moveInput);
+    }
+
+    //=========================
+    // 移動処理
+    //=========================
+    private void Move()
+    {
+        Vector3 move = new Vector3(moveInput.x, 0, 0);
+
+        transform.position += move * Speed * Time.deltaTime;
+
+        Vector3 pos = transform.position;
+        pos.x = Mathf.Clamp(pos.x, -2f, 2f);
+        transform.position = pos;
+    }
+
+    //=========================
+    // 発射処理
+    //=========================
+    private void Shoot(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
 
         if (CoinCount == 0) return;
 
-        if (GameManager.Instance.DebtCanvas.activeSelf == false)
-        {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                // Prefabが登録されていなければ終了
-                if (Coin.Length == 0) return;
+        if (GameManager.Instance.DebtCanvas.activeSelf)
+            return;
 
-                // ランダムにPrefabを選ぶ
-                int randomIndex = Random.Range(0, Coin.Length);
+        if (Coin.Length == 0)
+            return;
 
-                // 選んだPrefabを生成
-                var create_coin =
-                    Instantiate(
-                        Coin[randomIndex],
-                        CreatePoint.position,
-                        Quaternion.Euler(COIN_ROTATION));
+        // ランダムにPrefabを選択
+        int randomIndex = Random.Range(0, Coin.Length);
 
-                // 発射
-                var rb = create_coin.GetComponent<Rigidbody>();
-                rb.AddForce(CreatePoint.forward * Power, ForceMode.Impulse);
+        // コイン生成
+        GameObject createCoin = Instantiate(
+            Coin[randomIndex],
+            CreatePoint.position,
+            Quaternion.Euler(-90, 0, 0));
 
-                // 所持コインを減らす
-                CoinCount--;
+        // 発射
+        Rigidbody rb = createCoin.GetComponent<Rigidbody>();
 
-                // 効果音再生
-                audioSource.PlayOneShot(SE);
+        rb.AddForce(
+            CreatePoint.forward * Power,
+            ForceMode.Impulse);
 
-            }
-        }
+        // コイン消費
+        CoinCount--;
+
+        // 効果音
+        audioSource.PlayOneShot(SE);
     }
 
-    void Move()
+    private void ReturnToTitle(InputAction.CallbackContext context)
     {
-   
-        // 横入力取得
-        float x = Input.GetAxisRaw("Horizontal");
+        if (!context.performed) return;
 
-        // 移動量
-        Vector3 move = new Vector3(x * Speed * Time.deltaTime, 0, 0);
-
-        // 移動
-        transform.position += move;
-
-        // 範囲制限
-        Vector3 pos = transform.position;
-
-        pos.x = Mathf.Clamp(pos.x, MOVE_MIN_X, MOVE_MAX_X);
-
-        transform.position = pos;
+        SceneChanger.Instance.GoToReturnScen();
     }
 }

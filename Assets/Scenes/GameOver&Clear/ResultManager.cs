@@ -18,22 +18,10 @@ public class ResultManager : MonoBehaviour
     // 総獲得メダル数
     public int result;
 
-    // リザルト画面開始時の時間倍率
-    public const float RESULT_TIME_SCALE = 1f;
-
-    // GameManagerが取得できなかった場合に使用するリザルトの初期値
-    public const int DEFAULT_RESULT = 500;
-
-    // リザルトのメダルを1枚ずつ生成する間隔（秒）
-    public const float RESULT_INTERVAL = 0.01f;
-
     IEnumerator Start()
     {
-        Time.timeScale = RESULT_TIME_SCALE;
-        Debug.Log("result = " + result);
-        Debug.Log("totalmoney = " + GameManager.Instance.totalmoney);
-        Debug.Log("timeScale = " + Time.timeScale);
-        result = DEFAULT_RESULT;
+        Time.timeScale = 1;
+        result = 500;
 
         // GameManagerがある時
         if (GameManager.Instance != null)
@@ -55,7 +43,7 @@ public class ResultManager : MonoBehaviour
             Debug.Log("count = " + count);
             count++;
 
-            yield return new WaitForSeconds(RESULT_INTERVAL);
+            yield return new WaitForSeconds(0.01f);
             Debug.Log("CreateMedal");
         }
     }

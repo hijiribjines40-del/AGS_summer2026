@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -9,12 +10,40 @@ public class DebtUI : MonoBehaviour
     public Text TurnCount;
     public Text RoundCount;
 
+    public CoinController coinController;
     // 借金の加算
     public int debtAdd;
     public InputField PayInputField;
 
     public GameObject DebtCanvas;
     public PushSceneManager pushSceneManager;
+
+    private PlayerInputActions inputActions;
+
+    public int addMoney = 1;
+
+    private void Awake()
+    {
+        inputActions = new PlayerInputActions();
+    }
+
+    private void OnEnable()
+    {
+        inputActions.Repayment.Enable();
+
+        inputActions.Repayment.Increase.performed += IncreasePay;
+        inputActions.Repayment.Decrease.performed += DecreasePay;
+        inputActions.Repayment.Confirm.performed += ConfirmPay;
+    }
+
+    private void OnDisable()
+    {
+        inputActions.Repayment.Increase.performed -= IncreasePay;
+        inputActions.Repayment.Decrease.performed -= DecreasePay;
+        inputActions.Repayment.Confirm.performed -= ConfirmPay;
+
+        inputActions.Repayment.Disable();
+    }
 
     void Update()
     {
@@ -25,20 +54,30 @@ public class DebtUI : MonoBehaviour
             GameManager.Instance.debt.ToString();
 
         int remainTurn =
-            GameManager.Instance.maxTurn -
-            GameManager.Instance.turn;
+            GameManager.Instance.maxTurn - 
+            GameManager.Instance.turn + 1;
 
         TurnCount.text =
             remainTurn.ToString();
 
         if (remainTurn <= 1) // 残り1ターン
         {
-            TurnCount.color =
-                new Color(
-                    1,
-                    Mathf.Abs(Mathf.Sin(Time.time * 5)),
-                    Mathf.Abs(Mathf.Sin(Time.time * 5))
-                );
+            float blink = Mathf.Abs(
+            Mathf.Sin(Time.unscaledTime * 5)
+        );
+
+            if (blink > 0.5f)
+            {
+                TurnCount.color = Color.red;
+            }
+            else
+            {
+                TurnCount.color = Color.white;
+            }
+        }
+        else
+        {
+            TurnCount.color = Color.white;
         }
 
         RoundCount.text =
@@ -50,12 +89,48 @@ public class DebtUI : MonoBehaviour
             // GameSceneへ移動
             GameOver();
         }
-
         if (Input.GetKeyDown(KeyCode.N))
         {
             // GameSceneへ移動
             GameClear();
         }
+    }
+
+    // ⑤ 入力処理
+    private void IncreasePay(InputAction.CallbackContext ctx)
+    {
+        int pay = 0;
+
+        int.TryParse(PayInputField.text, out pay);
+
+        pay += addMoney;
+
+        if (pay > GameManager.Instance.money)
+            pay = GameManager.Instance.money;
+
+        if (pay > GameManager.Instance.debt)
+            pay = GameManager.Instance.debt;
+
+        PayInputField.text = pay.ToString();
+    }
+
+    private void DecreasePay(InputAction.CallbackContext ctx)
+    {
+        int pay = 0;
+
+        int.TryParse(PayInputField.text, out pay);
+
+        pay -= addMoney;
+
+        if (pay < 0)
+            pay = 0;
+
+        PayInputField.text = pay.ToString();
+    }
+
+    private void ConfirmPay(InputAction.CallbackContext ctx)
+    {
+        PayDebt();
     }
 
     public void PayDebt()
@@ -67,6 +142,8 @@ public class DebtUI : MonoBehaviour
             PayInputField.text = "";
             return;
         }
+        //int pay =
+        //    int.Parse(PayInputField.text);
 
         int originalPay = pay;
 
@@ -88,6 +165,13 @@ public class DebtUI : MonoBehaviour
             PayInputField.text = pay.ToString();
             return;
         }
+
+        //// 所持金以上は支払えない
+        //if (pay > GameManager.Instance.money)
+        //{
+        //    Debug.Log("所持金が足りません");
+        //    return;
+        //}
 
         // ここから実際の返済
         // お金減少
@@ -113,13 +197,15 @@ public class DebtUI : MonoBehaviour
 
         // 制限ターン超え
         if (GameManager.Instance.turn >
-            GameManager.Instance.maxTurn)
+           GameManager.Instance.maxTurn)
         {
             GameOver();
         }
         else
         {
-            pushSceneManager.timer = 30f;
+            //コインの足りない分だけ補充,追加
+            GameCoinAdd();
+            pushSceneManager.timer = pushSceneManager.Bestimer;
 
             Time.timeScale = 1;
 
@@ -130,10 +216,9 @@ public class DebtUI : MonoBehaviour
     void NextRound()
     {
         GameManager.Instance.round++;
-
         // 制限ラウンド超え
         if (GameManager.Instance.round >
-            GameManager.Instance.maxRound)
+           GameManager.Instance.maxRound)
         {
             // 完済チェック
             if (GameManager.Instance.debt <= 0)
@@ -156,7 +241,10 @@ public class DebtUI : MonoBehaviour
             GameManager.Instance.debt +=
                 GameManager.Instance.baseDebt;
 
-            pushSceneManager.timer = 30f;
+            //コインの足りない分だけ補充,追加
+            GameCoinAdd();
+
+            pushSceneManager.timer = pushSceneManager.Bestimer;
 
             Time.timeScale = 1;
 
@@ -172,5 +260,13 @@ public class DebtUI : MonoBehaviour
     void GameClear()
     {
         SceneManager.LoadScene("ClearScene");
+    }
+
+    void GameCoinAdd()
+    {
+        if (coinController.CoinCount < coinController.BaseCoinCount)
+        {
+            coinController.CoinCount = coinController.BaseCoinCount;
+        }
     }
 }
