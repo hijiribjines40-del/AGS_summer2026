@@ -4262,7 +4262,7 @@ MonoBehaviour:
   baseDebt: 30
   debt: 30
   totalmoney: 0
-  round: 1
+  round: 3
   maxRound: 3
   turn: 3
   maxTurn: 3
@@ -7836,6 +7836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PushSceneManager
   timer: 1
   TimerText: {fileID: 1848727489}
+  Bestimer: 30
   DebtCanvas: {fileID: 1726571770}
 --- !u!4 &1450870705
 Transform:
@@ -8071,6 +8072,7 @@ MonoBehaviour:
   PayInputField: {fileID: 224393526}
   DebtCanvas: {fileID: 1726571770}
   pushSceneManager: {fileID: 1450870704}
+  addMoney: 1
 --- !u!224 &1513381565
 RectTransform:
   m_ObjectHideFlags: 0

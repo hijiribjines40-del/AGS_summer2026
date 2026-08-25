@@ -6,7 +6,7 @@ public class PushSceneManager : MonoBehaviour
 {
     public float timer = 30f;
     public Text TimerText;
-
+    public float Bestimer = 30f;
     public GameObject DebtCanvas;
 
     // ’Êí‚ÌƒQ[ƒ€‘¬“x
