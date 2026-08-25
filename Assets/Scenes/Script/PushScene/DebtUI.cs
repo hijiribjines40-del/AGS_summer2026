@@ -55,19 +55,29 @@ public class DebtUI : MonoBehaviour
 
         int remainTurn =
             GameManager.Instance.maxTurn - 
-            GameManager.Instance.turn;
+            GameManager.Instance.turn + 1;
 
         TurnCount.text =
             remainTurn.ToString();
 
         if (remainTurn <= 1) // Žc‚è1ƒ^[ƒ“
         {
-            TurnCount.color =
-                new Color(
-                    1,
-                    Mathf.Abs(Mathf.Sin(Time.time * 5)),
-                    Mathf.Abs(Mathf.Sin(Time.time * 5))
-                );
+            float blink = Mathf.Abs(
+            Mathf.Sin(Time.unscaledTime * 5)
+        );
+
+            if (blink > 0.5f)
+            {
+                TurnCount.color = Color.red;
+            }
+            else
+            {
+                TurnCount.color = Color.white;
+            }
+        }
+        else
+        {
+            TurnCount.color = Color.white;
         }
 
         RoundCount.text =
